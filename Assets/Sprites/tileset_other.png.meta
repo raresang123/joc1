@@ -156,7 +156,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 14, z: 0, w: 0}
+      border: {x: 0, y: 16, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -239,7 +239,7 @@ TextureImporter:
         width: 16
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,6 +247,90 @@ TextureImporter:
       bones: []
       spriteID: 79e5938cf970cd9429e4036394788a2c
       internalID: 1055019383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_other_5
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 274
+        width: 45
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99faf7e11b25c7548bfc7ec35f915e5d
+      internalID: -1883542055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_other_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 220
+        width: 8
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770f53b34b6e8f14e82f9ac8d1067eb4
+      internalID: 1056317316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boschet
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 162
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a00023fd856274da72f578e7664426
+      internalID: 1782247968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_other_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 464
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be945d3d4669f194eb45dab4896d49a6
+      internalID: 1759358181
       vertices: []
       indices: 
       edges: []
@@ -266,8 +350,12 @@ TextureImporter:
       tree: 1007360941
       tileset_other_3: 712949053
       tileset_other_1: -443345422
+      tileset_other_8: 1759358181
       tileset_other_4: 1055019383
       tileset_other_0: -201838186
+      tileset_other_6: 1056317316
+      boschet: 1782247968
+      tileset_other_5: -1883542055
       TreeLog: -1961646143
   spritePackingTag: 
   pSDRemoveMatte: 0
