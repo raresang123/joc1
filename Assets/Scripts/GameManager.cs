@@ -5,10 +5,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
      private void Awake() 
+   
      {
-        instance = this;
+        instance = this;  
      }
+     
      public GameObject player; 
      public ItemContainer inventoryContainer;
+     public InventoryDragAndDrop1 dragAndDropController;
 }

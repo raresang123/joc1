@@ -15,7 +15,14 @@ public class PickUpItem : MonoBehaviour
      private void Awake() 
     {
         player = GameManager.instance.player.transform;
-        Debug.LogError("ayayyayayya");
+    }
+
+    public void Set(Item item, int count)
+    {
+       this.item = item;
+       this.count = count;
+       SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+       renderer.sprite = item.icon;
     }
 
      private void Update() 

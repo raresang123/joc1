@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InvetoryController : MonoBehaviour
+public class InventoryController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject panel;
 
-    // Update is called once per frame
-    void Update()
+     private void Update() 
     {
-        
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            panel.SetActive(!panel.activeInHierarchy);
+        }
     }
 }

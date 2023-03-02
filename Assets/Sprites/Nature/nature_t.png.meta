@@ -1,0 +1,646 @@
+fileFormatVersion: 2
+guid: 687cd345573be4d4db8f0e9ab5b5f091
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nature_t_0
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1806
+        width: 106
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5595404, y: 0.21496975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b268b4d19f40b149bc66cbb725827e7
+      internalID: -573938388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: copacUscat
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2482
+        width: 39
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabe65fcf4041fc4ca428069b80a6206
+      internalID: -1792182821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: copacRoz
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 2690
+        width: 54
+        height: 107
+      alignment: 9
+      pivot: {x: 0.5087371, y: 0.0721812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596e53018f10b204a916241ebd8f0a78
+      internalID: 156476888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IarbaBuna
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1554
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04244ac43c97b8145aff70e9876ecd26
+      internalID: -1453658142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iarbaMica
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1650
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bde4542c5a29dc4c81c43bb531b755a
+      internalID: 560336817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kk
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1429
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6345e9a87ac800943a0d0a165b3deb43
+      internalID: 2045394075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature_t_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 2234
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7301d5143f62cd94a9b16e5e80898ee9
+      internalID: -2013567022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pamant
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 1326
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff22cd5705c416c4ca1750a46978f5c8
+      internalID: 1629714937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gardVertical
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1540
+        width: 5
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90745efd5fe887f4e8ee852b38a4f0d9
+      internalID: 855905973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gardOrizontal
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 1540
+        width: 35
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71472e8ef6b989d449db949422a04c23
+      internalID: 1843267778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: colt
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1569
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801825d73829ccb439efbc894cd69552
+      internalID: -261936632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: babyCopacel
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2414
+        width: 15
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 8.5}
+        - {x: 0, y: 8.5}
+        - {x: -4, y: 8.5}
+        - {x: -10, y: 8.5}
+        - {x: -14, y: 1.5}
+        - {x: -16, y: -0.5}
+        - {x: -16, y: -4.5}
+        - {x: -13, y: -10.5}
+        - {x: -9, y: -12.5}
+        - {x: -5, y: -15.5}
+        - {x: 5, y: -16.5}
+        - {x: 8, y: -12.5}
+        - {x: 14, y: -7.5}
+        - {x: 15, y: -5.5}
+        - {x: 15, y: 0.5}
+        - {x: 10, y: 7.5}
+        - {x: 7, y: 8.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ae2ad17934a3349a1307045d54dc9a
+      internalID: 610975585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature_t_1
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 866
+        width: 144
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58a51672cbebd240b209b4ad156ee98
+      internalID: -1741393091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: babyCopace
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2435
+        width: 32
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4772843, y: 0.41317984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842e6aae83776bf4dbb23c0f9a701daa
+      internalID: -251272672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Log
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 1572
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fffdfa61de527459661af42af52308
+      internalID: -1587948741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piatra1
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1843
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b613fc5d9c1865d49beb1d65104d5dab
+      internalID: 508685802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PiatraMica
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 1923
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2a0fdaba8ef304eaaf4a693662418f
+      internalID: 1732468502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass2
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 2041
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3118a303b568045adffaf0845852ff
+      internalID: -2110929390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buruiana
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 1790
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b170494f07e424d80bce8b5f82233a
+      internalID: -2110038361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marker
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 2042
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56adb67b07c16b244a8f2ac5210acc6b
+      internalID: 813300983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature_t_3
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 2142
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc86697b825df54f824df019a300f5f
+      internalID: -914013816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature_t_4
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1291
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.47564507, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93568df29303630449102be648265b6f
+      internalID: 1150538332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plowed
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2042
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b253ecc10c8f74c9a5926f06f2d16e
+      internalID: -1693344645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Marker: 813300983
+      plowed: -1693344645
+      babyCopacel: 610975585
+      kk: 2045394075
+      gardVertical: 855905973
+      Piatra1: 508685802
+      copacRoz: 156476888
+      nature_t_3: -914013816
+      IarbaBuna: -1453658142
+      Buruiana: -2110038361
+      nature_t_0: -573938388
+      pamant: 1629714937
+      Log: -1587948741
+      colt: -261936632
+      gardOrizontal: 1843267778
+      copacUscat: -1792182821
+      iarbaMica: 560336817
+      PiatraMica: 1732468502
+      nature_t_4: 1150538332
+      babyCopace: -251272672
+      nature_t_2: -2013567022
+      nature_t_1: -1741393091
+      Grass2: -2110929390
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,15 +9,15 @@ public class PlayerController : MonoBehaviour
 
     private float speed ;
     public Vector2 movement ;
-    // Start is called before the first frame update
+   
     void Start()
     {
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
-        speed = 5f ;
+        speed = 3f ;
     
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
        movement.x = Input.GetAxisRaw("Horizontal");

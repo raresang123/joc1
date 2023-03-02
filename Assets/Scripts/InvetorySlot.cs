@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
-public class InvetorySlot : MonoBehaviour
+public class InvetorySlot : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] Image icon;
     [SerializeField] TextMeshProUGUI text;
+    [SerializeField] Image highlight;
 
 int myIndex;
 
@@ -37,5 +39,13 @@ public void Clean()
     icon.gameObject.SetActive(false);
     text.gameObject.SetActive(false);
 }
-
+public void OnPointerClick(PointerEventData eventData)
+{
+    ItemPanel itemPanel = transform.parent.GetComponent<ItemPanel>();
+    itemPanel.OnClick(myIndex);
 }
+ public void Highlight(bool b) 
+  {
+    highlight.gameObject.SetActive(b);
+  }
+} 
