@@ -7,6 +7,7 @@ public class ToolsCharacterController : MonoBehaviour
 {
     PlayerController character;
     Rigidbody2D rgbd2d;
+    ToolbarController toolbarController;
    [SerializeField] float offsetDistance = 1f;
    [SerializeField] float sizeOfInteractableArea = 1.2f; 
    [SerializeField] MarkerManager MarkerManager;
@@ -14,6 +15,7 @@ public class ToolsCharacterController : MonoBehaviour
    [SerializeField] float maxDistance = 1.5f;
    [SerializeField] CropsManager cropsManager;
    [SerializeField] TileData plowableTiles;
+   
 
     Vector3Int selectedTilePosition;
     bool selectable;
@@ -22,10 +24,10 @@ public class ToolsCharacterController : MonoBehaviour
     {
         character = GetComponent<PlayerController>();
         rgbd2d = GetComponent<Rigidbody2D>();
-          
+        toolbarController = GetComponent<ToolbarController>();
     }
     private void Update()
-    {  
+    {   
         SelectTile();
         CanSelectCheck();
         Marker();
@@ -63,17 +65,30 @@ public class ToolsCharacterController : MonoBehaviour
     private bool UseToolWorld()
     {
         Vector2 position = rgbd2d.position + character.movement * offsetDistance;
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
+        Item item=toolbarController.GetItem;
+        if (item == null) { return false;}
+        if (item.onAction == null) { return false;}
+        bool complete=item.onAction.OnApply(position);
+        /*Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
         foreach (Collider2D c in colliders)
         {
-            ToolHit hit = c.GetComponent<ToolHit>();
-            if (hit != null)
+            if (Input.GetMouseButtonDown(0))
             {
-                hit.Hit();
-               return true;
+                Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+                if (c.OverlapPoint(mousePosition))
+                {
+                    ToolHit hit = c.GetComponent<ToolHit>();
+                    if (hit != null)
+                    {
+                        hit.Hit();
+                       return true;
+                    }
+                }
             }
-        }
-        return false;
+
+        }*/
+        return complete;
     }
 
     private void UseToolGrid()

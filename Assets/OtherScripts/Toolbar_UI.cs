@@ -2,10 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ToolHit : MonoBehaviour
+public class Toolbar_UI : MonoBehaviour
 {
-    public virtual void Hit()
-    {
-
-    }
+    
 }

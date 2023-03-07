@@ -19,6 +19,23 @@ public class DayTimeController : MonoBehaviour
      [SerializeField] Light2D globalLight;
      private int days;
 
+     List<TimeAgent> agents ;
+     
+    private void Awake()
+    {
+        agents = new List<TimeAgent>();
+
+    }
+    
+    public void Subscribe(TimeAgent timeAgent)
+    {
+        agents.Add(timeAgent);
+    }
+    public void Unsubscribe(TimeAgent timeAgent)
+    {
+        agents.Remove(timeAgent);
+    }
+
     
      float Hours 
      {

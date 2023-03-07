@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ToolAction : MonoBehaviour
+public class ToolAction : ScriptableObject
 {
-    //public virtual bool OnApply(Vector2 worldPoint)
-    //{
-    //    return true;
-    //}
+    public virtual bool OnApply(Vector2 worldPoint)
+    {
+        return true;
+    }
 
 }

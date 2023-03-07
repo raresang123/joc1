@@ -41,7 +41,7 @@ public void Clean()
 }
 public void OnPointerClick(PointerEventData eventData)
 {
-    ItemPanel itemPanel = transform.parent.GetComponent<ItemPanel>();
+        ItemPanel itemPanel = transform.parent.GetComponent<ItemPanel>();
     itemPanel.OnClick(myIndex);
 }
  public void Highlight(bool b) 

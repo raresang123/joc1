@@ -15,4 +15,6 @@ public class GameManager : MonoBehaviour
      public GameObject player; 
      public ItemContainer inventoryContainer;
      public InventoryDragAndDrop1 dragAndDropController;
+     public DayTimeController timeController;
+
 }
