@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//[RequireComponent(typeof(BoxCollider2D))]
 public class TreeCuttable : ToolHit
 {
     [SerializeField] GameObject pickUpDrop;
@@ -9,7 +10,8 @@ public class TreeCuttable : ToolHit
     [SerializeField] float spread = 0.5f;
     [SerializeField] Item item ;
     [SerializeField] int itemCountInOneDrop =1;
-     int damageTree = 2;
+    [SerializeField] ResourceNodeType nodeType;
+    int damageTree = 2;
 
     public override void Hit()
     {
@@ -24,9 +26,14 @@ public class TreeCuttable : ToolHit
                 ItemSpawnManager.instance.SpawnItem(position, item, itemCountInOneDrop);
             }
             Destroy(gameObject);
+
         }
         else damageTree--;
 
     }
-    
+    public override bool CanBeHit(List<ResourceNodeType> canBeHit)
+    {
+        return canBeHit.Contains(nodeType);
+    }
+
 }

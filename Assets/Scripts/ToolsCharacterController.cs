@@ -69,51 +69,56 @@ public class ToolsCharacterController : MonoBehaviour
         if (item == null) { return false;}
         if (item.onAction == null) { return false;}
         bool complete=item.onAction.OnApply(position);
-        /*Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
-        foreach (Collider2D c in colliders)
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
+        //foreach (Collider2D c in colliders)
+        //{
+        //    if (Input.GetMouseButtonDown(0))
+        //    {
+        //        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-                if (c.OverlapPoint(mousePosition))
-                {
-                    ToolHit hit = c.GetComponent<ToolHit>();
-                    if (hit != null)
-                    {
-                        hit.Hit();
-                       return true;
-                    }
-                }
-            }
+        //        if (c.OverlapPoint(mousePosition))
+        //        {
+        //            ToolHit hit = c.GetComponent<ToolHit>();
+        //            if (hit != null)
+        //            {
+        //                hit.Hit();
+        //               return true;
+        //            }
+        //        }
+        //    }
 
-        }*/
+        //}
         return complete;
     }
 
     private void UseToolGrid()
     {
          if(selectable == true)
-         {   
-            TileBase tileBase = tileMapReadController.GetTileBase(selectedTilePosition);
-            TileData tileData = tileMapReadController.GetTileData(tileBase);
+         {
+
+            Item item = toolbarController.GetItem;
+            if (item == null) { return ; }
+            if (item.onTileMapAction == null) { return; }
+            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition,tileMapReadController);
+            // TileBase tileBase = tileMapReadController.GetTileBase(selectedTilePosition);
+            //TileData tileData = tileMapReadController.GetTileData(tileBase);
 
 
-            if( tileData != plowableTiles)
-            {
-                return;
-            }
+            //if( tileData != plowableTiles)
+            //{
+            //    return;
+            //}
 
-            if(cropsManager.Check(selectedTilePosition))
-            {
-                cropsManager.Seed(selectedTilePosition);
-            }
-            else
-            {
-                cropsManager.Plow(selectedTilePosition);
-            }
-            
-         }
+            //if(cropsManager.Check(selectedTilePosition))
+            //{
+            //    cropsManager.Seed(selectedTilePosition);
+            //}
+            //else
+            //{
+            //    cropsManager.Plow(selectedTilePosition);
+            //}
+
+        }
     }
 }
 

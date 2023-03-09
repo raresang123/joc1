@@ -103,6 +103,7 @@ MonoBehaviour:
   spread: 0.5
   item: {fileID: 11400000, guid: a4d8ef55b47af6946b894e72feab700b, type: 2}
   itemCountInOneDrop: 1
+  nodeType: 1
 --- !u!61 &4946917950491282396
 BoxCollider2D:
   m_ObjectHideFlags: 0

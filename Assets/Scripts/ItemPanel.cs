@@ -9,6 +9,11 @@ public class ItemPanel : MonoBehaviour
 
      private void Start() 
     {
+        Init();
+    }
+
+    public void Init()
+    {
         SetIndex();
         Show();
     }
