@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1afac274becbae54c854722ec97a693f, type: 3}
+  m_Name: Sapa
+  m_EditorClassIdentifier: 
+  Name: Sapa
+  stackable: 0
+  icon: {fileID: -296662650, guid: 87987314ce75240429f37102e73c3a40, type: 3}
+  onAction: {fileID: 0}
+  onTileMapAction: {fileID: 11400000, guid: 7a6691d747824ac4d8e92426e5637759, type: 2}

@@ -12,7 +12,13 @@ public class PlowTile : ToolAction
     public override bool OnApplyToTileMap(Vector3Int gridPosition, TileMapReadController tileMapReadController)
     {
         TileBase tileToPlow = tileMapReadController.GetTileBase(gridPosition);  
+        
+        if(canPlow.Contains(tileToPlow) == false)
+        {
+            return false; 
+        }
 
+        tileMapReadController.cropsManager.Plow(gridPosition);
         return true;
     }
 }

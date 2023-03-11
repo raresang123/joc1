@@ -8,7 +8,7 @@ public class TileMapReadController : MonoBehaviour
 {
     [SerializeField] Tilemap tilemap;
     public CropsManager cropsManager;
-    [SerializeField] TileData plowableTiles;
+    public TileData plowableTiles;
     [SerializeField] List<TileData> tileDatas;
     Dictionary<TileBase, TileData> dataFromTiles;
 
