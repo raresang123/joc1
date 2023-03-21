@@ -31,7 +31,7 @@ public class ItemSlot
 
 [CreateAssetMenu(menuName = "Data/Item Container")]
 
-public class ItemContainer : ScriptableObject 
+public class ItemContainer : ScriptableObject
 {
     public List<ItemSlot> slots;
 
@@ -39,30 +39,52 @@ public class ItemContainer : ScriptableObject
     {
         if (item.stackable == true)
         {
-              ItemSlot itemSlot = slots.Find(x => x.item == item);
-              if (itemSlot != null)
-              {
+            ItemSlot itemSlot = slots.Find(x => x.item == item);
+            if (itemSlot != null)
+            {
                 itemSlot.count += count;
-              }
-              else
-              {
+            }
+            else
+            {
                 itemSlot = slots.Find(x => x.item == null);
                 if (itemSlot != null)
                 {
                     itemSlot.item = item;
                     itemSlot.count = count;
                 }
-              }
+            }
         }
         else
         {
-          ItemSlot itemSlot = slots.Find(x => x.item == null);
-          if (itemSlot == null)
-          {
-             itemSlot.item = item;
-          }
+            ItemSlot itemSlot = slots.Find(x => x.item == null);
+            if (itemSlot == null)
+            {
+                itemSlot.item = item;
+            }
         }
     }
 
+    public void Remove(Item itemToRemove, int count = 1)
+    {
+        if(itemToRemove.stackable)
+        {
+            ItemSlot itemSlot = slots.Find(x => x.item == itemToRemove);
+            itemSlot.count -= count;
+            if(itemSlot.count <= 0)
+            {
+                itemSlot.Clear();
 
+            }
+        }
+        else
+        {
+            while(count > 0 )
+            {
+                count -= 1;
+                ItemSlot itemSlot = slots.Find(x => x.item == itemToRemove);
+                if(itemSlot == null ) { return; }
+                itemSlot.Clear();
+            }
+        }
+    }
 }

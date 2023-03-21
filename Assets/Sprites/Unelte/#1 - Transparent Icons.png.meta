@@ -155,7 +155,7 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,6 +163,27 @@ TextureImporter:
       bones: []
       spriteID: c765d58db17a38f45b16bff404a51fe6
       internalID: -296662650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosie
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 390
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff5ef4863ba78f46aaf9f14a329d55f
+      internalID: 643961997
       vertices: []
       indices: 
       edges: []
@@ -180,6 +201,7 @@ TextureImporter:
     nameFileIdTable:
       Sapa: -296662650
       Topor: 694879692
+      Rosie: 643961997
       Tarnacop: -947843796
   spritePackingTag: 
   pSDRemoveMatte: 0

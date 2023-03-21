@@ -8,25 +8,28 @@ public class DayTimeController : MonoBehaviour
 {
 
     const float secondsInDay = 84500f;
+    const float phaseLength = 900f;
     [SerializeField] Color nightLightColor;
     [SerializeField] AnimationCurve nightTimeCurve;
     [SerializeField] Color dayLightColor = Color.white;
-    
-    float time ; 
 
-     [SerializeField] Text text;
-     [SerializeField] float timeScale = 60f;
-     [SerializeField] Light2D globalLight;
-     private int days;
+    float time;
 
-     List<TimeAgent> agents ;
-     
+    [SerializeField] float startAtTime = 28800f;
+    [SerializeField] Text text;
+    [SerializeField] float timeScale = 60f;
+    [SerializeField] Light2D globalLight;
+    private int days;
+
+    List<TimeAgent> agents;
+
     private void Awake()
     {
         agents = new List<TimeAgent>();
 
     }
-    
+   
+
     public void Subscribe(TimeAgent timeAgent)
     {
         agents.Add(timeAgent);
@@ -36,37 +39,66 @@ public class DayTimeController : MonoBehaviour
         agents.Remove(timeAgent);
     }
 
-    
-     float Hours 
-     {
-        get { return time /3600f;}
-     }
 
-     float Minutes 
-     {
-        get { return time % 3600f/60f;}
-     }
-    
-    
-    
-    private void Update() 
+    float Hours
+    {
+        get { return time / 3600f; }
+    }
+
+    float Minutes
+    {
+        get { return time % 3600f / 60f; }
+    }
+
+
+
+    private void Update()
     {
         time += Time.deltaTime * timeScale;
-        int hh = (int)Hours;
-        int mm = (int)Minutes;
-        text.text = hh.ToString("00") + ":" + mm.ToString("00");
-        float v = nightTimeCurve.Evaluate(Hours);
-        Color c = Color.Lerp(dayLightColor, nightLightColor, v);
-        globalLight.color = c;
+        TimeValueCalculation();
+        DayLight();
+        TimeAgents();
+
         if (time > secondsInDay)
         {
             NextDay();
         }
+
+
+    }
+
+    int currentPhase = 0;
+    private void TimeAgents()
+    {
+        int phase = (int)(time / phaseLength);
+
+        if (currentPhase != phase)
+        {
+            for (int i = 0; i < agents.Count; i++)
+            {
+                agents[i].onTimeTick();
+            }
+        }
+
+    }
+    private void DayLight()
+    {
+
+        float v = nightTimeCurve.Evaluate(Hours);
+        Color c = Color.Lerp(dayLightColor, nightLightColor, v);
+        globalLight.color = c;
+    }
+
+    private void TimeValueCalculation()
+    {
+        int hh = (int)Hours;
+        int mm = (int)Minutes;
+        text.text = hh.ToString("00") + ":" + mm.ToString("00");
     }
     private void NextDay()
     {
-        time = 0    ;
-        days += 1; 
+        time = 0;
+        days += 1;
 
     }
 

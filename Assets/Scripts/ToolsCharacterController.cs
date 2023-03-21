@@ -15,6 +15,8 @@ public class ToolsCharacterController : MonoBehaviour
    [SerializeField] float maxDistance = 1.5f;
    [SerializeField] CropsManager cropsManager;
    [SerializeField] TileData plowableTiles;
+   [SerializeField] ToolAction onTilePickUp;
+
    
 
     Vector3Int selectedTilePosition;
@@ -69,6 +71,14 @@ public class ToolsCharacterController : MonoBehaviour
         if (item == null) { return false;}
         if (item.onAction == null) { return false;}
         bool complete=item.onAction.OnApply(position);
+
+        if (complete == true)
+        {
+            if (item.onItemUsed != null)
+
+                item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);
+
+        }
         //Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
         //foreach (Collider2D c in colliders)
         //{
@@ -97,9 +107,30 @@ public class ToolsCharacterController : MonoBehaviour
          {
 
             Item item = toolbarController.GetItem;
-            if (item == null) { return ; }
+            if (item == null) {
+                PickUpTile();
+                return ; }
             if (item.onTileMapAction == null) { return; }
-            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition,tileMapReadController);
+            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition,tileMapReadController,item);
+            
+                if(complete == true )
+                {
+                    if(item.onItemUsed != null)
+
+                    item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);
+
+                }
+
+     void PickUpTile()
+            {
+                if(onTilePickUp == null )
+                {
+                     return ;
+                }
+                onTilePickUp.OnApplyToTileMap(selectedTilePosition, tileMapReadController, null);
+            }
+
+           
             // TileBase tileBase = tileMapReadController.GetTileBase(selectedTilePosition);
             //TileData tileData = tileMapReadController.GetTileData(tileBase);
 

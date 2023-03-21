@@ -93449,8 +93449,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 80.099976, y: 14.799988}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 153.41833, y: 94.87131}
+  m_SizeDelta: {x: 306.6367, y: 190.1426}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &433942852
 MonoBehaviour:
@@ -93474,12 +93474,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 1
+    m_MaxSize: 50
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -93836,7 +93836,7 @@ Transform:
   - {fileID: 1143895674}
   - {fileID: 768548676}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &458709758
 GameObject:
@@ -94209,7 +94209,7 @@ Transform:
   - {fileID: 2008196010}
   - {fileID: 201476002}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &482766660
 PrefabInstance:
@@ -100100,7 +100100,7 @@ MonoBehaviour:
   tileMapReadController: {fileID: 2001648658}
   maxDistance: 1.5
   cropsManager: {fileID: 2001648660}
-  plowableTiles: {fileID: 11400000, guid: 9c09b4c16b7ea1146b7a215b28d1e342, type: 2}
+  onTilePickUp: {fileID: 11400000, guid: 7a2bc6797a25b904e96e6caa05d65a50, type: 2}
 --- !u!114 &1184119735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100439,7 +100439,7 @@ Transform:
   - {fileID: 582692593}
   - {fileID: 148951885}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1228838380
 GameObject:
@@ -105090,10 +105090,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilemap: {fileID: 169972796}
   cropsManager: {fileID: 2001648660}
-  plowableTiles: {fileID: 11400000, guid: 9c09b4c16b7ea1146b7a215b28d1e342, type: 2}
-  tileDatas:
-  - {fileID: 11400000, guid: 9c09b4c16b7ea1146b7a215b28d1e342, type: 2}
-  - {fileID: 11400000, guid: e96e0fba5cff9654f804a054069f2c9f, type: 2}
 --- !u!114 &2001648659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105125,6 +105121,7 @@ MonoBehaviour:
   plowed: {fileID: 11400000, guid: c8998ec4dec025e43acc157b51c8acca, type: 2}
   seeded: {fileID: 11400000, guid: af975b305f05a9b4eb533f29f8aa616b, type: 2}
   targetTilemap: {fileID: 1002216542}
+  cropsSpritePrefab: {fileID: 8257848289146330785, guid: e4bfa767e9f0d634ead63861c3e48013, type: 3}
 --- !u!114 &2001648661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105199,8 +105196,9 @@ MonoBehaviour:
     m_PostInfinity: 0
     m_RotationOrder: 4
   dayLightColor: {r: 1, g: 1, b: 1, a: 1}
+  startAtTime: 28800
   text: {fileID: 433942852}
-  timeScale: 1000
+  timeScale: 600
   globalLight: {fileID: 1577108779}
 --- !u!114 &2001648662
 MonoBehaviour:
@@ -105216,7 +105214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSlot:
     item: {fileID: 11400000, guid: a4d8ef55b47af6946b894e72feab700b, type: 2}
-    count: 0
+    count: 1
   itemIcon: {fileID: 1045622668}
 --- !u!114 &2001648663
 MonoBehaviour:

@@ -3,17 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class TimeAgent : MonoBehaviour
 {
-    public Action invoke;
+    public Action onTimeTick;
+
     private void Start()
+    {
+        Init(); 
+    }
+    public void Init()
     {
         GameManager.instance.timeController.Subscribe(this);
     }
-
     private void Invoke()
     {
-
+        onTimeTick.Invoke();
     }
 
     private void OnDestroy()
