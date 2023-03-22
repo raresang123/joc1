@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2a95bf6e5cfaff24194fd319f3f8a2b8
+guid: ca0b55e2759e3d44995b908b039e479c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chestInchis
+      name: casaRozz_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 14
-        height: 15
+        x: 720
+        y: 83
+        width: 347
+        height: 344
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b200049cd12e2c419ce219a720f9e09
-      internalID: -1735366190
+      spriteID: 2063bfacaea42c54dbc0ed37b90131d8
+      internalID: 2070940978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chestDeschis
+      name: casaRozz_1
       rect:
         serializedVersion: 2
-        x: 81
+        x: 3
         y: 0
-        width: 14
-        height: 20
+        width: 145
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c1ef5ee15000ef48883e8dec22dc11b
-      internalID: 355222525
+      spriteID: 6a01bdfe05e1e1b44bd6b57684fb0945
+      internalID: -1830148318
       vertices: []
       indices: 
       edges: []
@@ -157,8 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chestInchis: -1735366190
-      chestDeschis: 355222525
+      casaRozz_0: 1865914923
+      casaRozz_1: -1830148318
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

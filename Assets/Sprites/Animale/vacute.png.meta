@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2a95bf6e5cfaff24194fd319f3f8a2b8
+guid: 2f50e16298f98dd4eae5c6de70e950d4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,34 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chestInchis
+      name: vacuta1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b200049cd12e2c419ce219a720f9e09
-      internalID: -1735366190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chestDeschis
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 0
-        width: 14
-        height: 20
+        x: 34
+        y: 653
+        width: 96
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c1ef5ee15000ef48883e8dec22dc11b
-      internalID: 355222525
+      spriteID: 4265a79256a8abc4e98243b67a526c90
+      internalID: 1852681376
       vertices: []
       indices: 
       edges: []
@@ -157,8 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chestInchis: -1735366190
-      chestDeschis: 355222525
+      vacuta1: 1852681376
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

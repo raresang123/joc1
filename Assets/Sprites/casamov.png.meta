@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2a95bf6e5cfaff24194fd319f3f8a2b8
+guid: 010bfa45b83ebb74ba92a7b48cecefdd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,34 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chestInchis
+      name: casa
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b200049cd12e2c419ce219a720f9e09
-      internalID: -1735366190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chestDeschis
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 0
-        width: 14
-        height: 20
+        x: 5
+        y: 132
+        width: 145
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +119,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c1ef5ee15000ef48883e8dec22dc11b
-      internalID: 355222525
+      spriteID: c29d5bc1fda982b41a77b7d5a50f87fb
+      internalID: 862523700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casamov_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 140
+        width: 73
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df795bee7c7260e4ea5ef42de860c594
+      internalID: -56494586
       vertices: []
       indices: 
       edges: []
@@ -157,8 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chestInchis: -1735366190
-      chestDeschis: 355222525
+      casamov_1: -56494586
+      casa: 862523700
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
