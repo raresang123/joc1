@@ -9,7 +9,11 @@ public class AnimalNPC : Interactable
     public float speed = 5;
     public Rigidbody2D rigidBody2D;
     private Animator anim;
+    private  int currentDirection; 
     
+  
+
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -18,11 +22,14 @@ public class AnimalNPC : Interactable
         ChangeDirection();
               
     }
-    void Collide()
-    {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(myTransform.position, 0.4f);
-        if (colliders.Length  >1)
+    private void OnCollisionEnter2D(Collision2D collision)
+    { 
+        Vector3 temp = directionVector;
+         ChangeDirection();
+        int loops = 0;
+        while(temp == directionVector && loops <100)
         {
+            loops++;
             ChangeDirection();
         }
        
@@ -31,16 +38,25 @@ public class AnimalNPC : Interactable
     void Update()
     {
         Move();
-        Collide();
     }
 
     private void Move()
-    {
-        rigidBody2D.MovePosition(myTransform.position + directionVector * speed * Time.deltaTime);
-    }
+    {   
+        Vector3 temp = myTransform.position + directionVector * speed * Time.deltaTime;
+        rigidBody2D.MovePosition(temp);
+    }   
+
+
      private void ChangeDirection()
     {
+       
         int direction = Random.Range(0, 4);
+         while( currentDirection == direction)
+        {
+            direction = Random.Range(0, 4);
+        }
+        currentDirection = direction ;
+    
         switch(direction)
         {
 
@@ -55,16 +71,16 @@ public class AnimalNPC : Interactable
                 break;
             case 3:
                 directionVector = Vector3.down;
-                break;
+               break;
             default:
-                break;
-        }
-        UpdateAnimation();
-    }
-   void UpdateAnimation()
-   {
-       
+             break;
+      }
+      UpdateAnimation();
+  }
+     void UpdateAnimation()
+    { 
       anim.SetFloat("Horizontal", directionVector.x);
       anim.SetFloat("Vertical", directionVector.y);
-   }
+
+    }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7f4095d5e9dff3147bbd4848a37b5797
+guid: 9ef17308ee9cd7a4d8db372faf908cb9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -103,7 +103,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Siloz1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 135
+        width: 189
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2f9ed64a7bb0f43aada0b5aa70a045
+      internalID: -753635190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mill
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 133
+        width: 252
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba6a35c7d970d34eba7f3bb4b21a835
+      internalID: -1435305069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +156,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mill: -1435305069
+      Siloz1: -753635190
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

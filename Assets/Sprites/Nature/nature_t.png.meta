@@ -604,6 +604,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: GardAlb
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1538
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4324d08fa1aec40439c365784a7e7e50
+      internalID: 954401685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GardAlb1
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1538
+        width: 7
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff4db5c661305149b7523da1d47b251
+      internalID: -2055764263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -623,6 +665,7 @@ TextureImporter:
       Piatra1: 508685802
       copacRoz: 156476888
       nature_t_3: -914013816
+      GardAlb1: -2055764263
       IarbaBuna: -1453658142
       Buruiana: -2110038361
       nature_t_0: -573938388
@@ -633,6 +676,7 @@ TextureImporter:
       copacUscat: -1792182821
       iarbaMica: 560336817
       PiatraMica: 1732468502
+      GardAlb: 954401685
       nature_t_4: 1150538332
       babyCopace: -251272672
       nature_t_2: -2013567022
