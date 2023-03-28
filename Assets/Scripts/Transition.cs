@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum TransitionType
 {
@@ -8,9 +9,11 @@ public enum TransitionType
 }
 
 public class Transition : MonoBehaviour
-
+   
 {
-     Transform destination; 
+    [SerializeField] TransitionType transitionType;
+    [SerializeField] string sceneNameToTransition;
+    Transform destination; 
     void Start()
     {
         destination = transform.GetChild(1);
@@ -18,6 +21,15 @@ public class Transition : MonoBehaviour
     
     internal void InitiateTransition(Transform toTransition)
     {
+         switch(transitionType)
+        {
+            case TransitionType.Warp:
+                break;
+            case TransitionType.Scene:
+                SceneManager.LoadScene(sceneNameToTransition);
+                break;
+
+        }
         toTransition.position = destination.position;
     }
    

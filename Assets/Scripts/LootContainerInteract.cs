@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
+ 
 public class LootContainerInteract : Interactable
  {
 [SerializeField] GameObject closedChest;
 [SerializeField] GameObject openedChest;
 [SerializeField] bool opened;
 
-    public override void Interact(Character character)
+    public override void Interact()
  {
      if(opened == false)
     {
