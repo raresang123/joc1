@@ -566,9 +566,9 @@ TextureImporter:
       name: nature_t_4
       rect:
         serializedVersion: 2
-        x: 298
+        x: 294
         y: 1291
-        width: 32
+        width: 36
         height: 32
       alignment: 9
       pivot: {x: 0.47564507, y: 0.5}

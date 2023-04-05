@@ -13,6 +13,7 @@ public class Transition : MonoBehaviour
 {
     [SerializeField] TransitionType transitionType;
     [SerializeField] string sceneNameToTransition;
+    [SerializeField] Vector3 targetPositon;
     Transform destination; 
     void Start()
     {
@@ -26,11 +27,10 @@ public class Transition : MonoBehaviour
             case TransitionType.Warp:
                 break;
             case TransitionType.Scene:
-                SceneManager.LoadScene(sceneNameToTransition);
+                GameSceneManager.instance.SwitchScene(sceneNameToTransition,targetPositon);
                 break;
 
         }
-        toTransition.position = destination.position;
     }
    
 }

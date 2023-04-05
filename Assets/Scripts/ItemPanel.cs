@@ -22,6 +22,15 @@ public class ItemPanel : MonoBehaviour
     {
         Show(); 
     }
+
+    private void LateUpdate()
+    {
+        if (inventory.isUpdated)
+        {
+            Show();
+            inventory.isUpdated = false;
+        }
+    }
     private void SetIndex()
     {
         for(int i = 0; i < inventory.slots.Count && i<buttons.Count; i++)

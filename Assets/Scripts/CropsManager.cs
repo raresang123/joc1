@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+[Serializable]
 public  class CropTile
 {
     public int growTimer;
@@ -12,6 +13,8 @@ public  class CropTile
     public Crop crop;
     public SpriteRenderer renderer;
     public float damage;
+    public Vector3Int position;
+
     public bool Complete
     {
         get
@@ -29,92 +32,49 @@ public  class CropTile
     }
 }
 
-public class CropsManager : TimeAgent
+public class CropsManager : MonoBehaviour
 {
-    [SerializeField] TileBase plowed;
-    [SerializeField] TileBase seeded;
-    [SerializeField] Tilemap targetTilemap;
-    [SerializeField] GameObject cropsSpritePrefab;
 
+    public TileMapCropsManager cropsManager;
 
-    Dictionary<Vector2Int, CropTile> cropTile;
-
-    private void Start()
+    public void PickUp(Vector3Int position)
     {
-        cropTile = new Dictionary<Vector2Int, CropTile>();
-        onTimeTick += Tick;
-        Init();
-         
-    }
-     public void Tick()
-    {
-        foreach (CropTile cropTile in cropTile.Values )
-        {
-            if(cropTile.crop == null) {continue; }
-
-             if (cropTile.Complete)
-
-
-            {
-                Debug.Log("dfsfds");
-                continue; 
-            }
-            cropTile.growTimer += 1;
-            if(cropTile.growTimer >= cropTile.crop.growthStageTime[cropTile.growStage])
-            {
-               
-                cropTile.renderer.gameObject.SetActive(true);
-                cropTile.renderer.sprite = cropTile.crop.sprites[cropTile.growStage];
-                cropTile.growStage +=1;
-
-            }
-        }    
-    }
-
-    public bool Check(Vector3Int position)
-    {
-       return cropTile.ContainsKey((Vector2Int)position);
-    }
-
-
-    public void Plow(Vector3Int position)
-    {
-         if(cropTile.ContainsKey((Vector2Int)position))
-         {
+        if( cropsManager == null)
+        { 
             return;
-         }
+        }
+        cropsManager.PickUp(position);
+    }
 
-         CreatePlowedTile(position);
+        public bool Check(Vector3Int position)
+    {
+        if (cropsManager == null)
+        {
+            return false;
+        }
+     return cropsManager.Check(position);
+
     }
 
     public void Seed(Vector3Int position, Crop toSeed)
     {
-       targetTilemap.SetTile(position, seeded);
-        cropTile[(Vector2Int)position].crop = toSeed;
-    }
-    
-    private void CreatePlowedTile(Vector3Int position)
-    {
-        CropTile crop = new CropTile();
-        cropTile.Add((Vector2Int)position, crop);
-
-        GameObject go=Instantiate(cropsSpritePrefab);
-        go.transform.position=targetTilemap.CellToWorld(position);
-        go.SetActive(false);
-        crop.renderer=go.GetComponent<SpriteRenderer>();
-        targetTilemap.SetTile(position, plowed);
-    }
-
-    internal void PickUp(Vector3Int gridPosition)
-    {
-        Vector2Int position = (Vector2Int)gridPosition ;
-         if( cropTile.ContainsKey(position) == false) { return;}
-         CropTile cropTilee = cropTile[position];
-        if (cropTilee.Complete)
+        if (cropsManager == null)
         {
-            ItemSpawnManager.instance.SpawnItem(targetTilemap.CellToWorld(gridPosition), cropTilee.crop.yield, cropTilee.crop.count );
-            targetTilemap.SetTile(gridPosition, plowed);
-            cropTilee.Harvested();
+            return;
         }
+        cropsManager.Seed(position, toSeed);
     }
+    public void Plow(Vector3Int position)
+    {
+        if (cropsManager == null)
+        {
+            return;
+        }
+        cropsManager.Plow(position);
+    }
+
+
+
+
+            
 }

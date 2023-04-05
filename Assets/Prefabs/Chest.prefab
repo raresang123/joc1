@@ -244,3 +244,4 @@ MonoBehaviour:
   closedChest: {fileID: 4209774718555294874}
   openedChest: {fileID: 4209774717907002685}
   opened: 0
+  itemContainer: {fileID: 11400000, guid: c026318f2de69ef4d855f96316055ad7, type: 2}

@@ -15,4 +15,5 @@ public class Item : ScriptableObject
     public ToolAction onItemUsed;
     public Crop crop;
     public GameObject itemPrefab;
+    public bool iconHighlight;
 }

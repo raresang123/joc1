@@ -16,6 +16,7 @@ public class ToolsCharacterController : MonoBehaviour
    [SerializeField] CropsManager cropsManager;
    [SerializeField] TileData plowableTiles;
    [SerializeField] ToolAction onTilePickUp;
+    [SerializeField] IconHighlight iconHighlight;
 
    
 
@@ -55,6 +56,7 @@ public class ToolsCharacterController : MonoBehaviour
         Vector2 cameraPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);   
         selectable = Vector2.Distance(characterPosition, cameraPosition) < maxDistance;
         MarkerManager.Show(selectable);
+        iconHighlight.CanSelect = selectable ;
      }
 
     private void Marker()
@@ -62,6 +64,7 @@ public class ToolsCharacterController : MonoBehaviour
     {
        
        MarkerManager.markedCellPosition =  selectedTilePosition;
+        iconHighlight.cellPosition = selectedTilePosition;
     }
 
     private bool UseToolWorld()

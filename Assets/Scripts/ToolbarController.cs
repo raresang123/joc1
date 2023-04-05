@@ -12,6 +12,7 @@ public class ToolbarController : MonoBehaviour
         
      
      public Action<int> onChange;
+    [SerializeField] IconHighlight iconHighlight;
      public Item GetItem
     {
         get
@@ -20,7 +21,11 @@ public class ToolbarController : MonoBehaviour
         }
     }
 
-
+    private void Start()
+    {
+        onChange += UpdateHighlight;
+        UpdateHighlight(selectedTool);
+    }
     private void Update()
     {
         float delta = Input.mouseScrollDelta.y;
@@ -43,5 +48,20 @@ public class ToolbarController : MonoBehaviour
     internal void Set(int id)
     {
         selectedTool = id;
+    }
+    void UpdateHighlight(int id)
+    {
+        Item item = GetItem;
+        if(item ==  null )
+        {
+            iconHighlight.Show = false;
+            return;
+        }
+         iconHighlight.Show = item.iconHighlight;
+        
+        if(item.iconHighlight)
+        {
+            iconHighlight.Set(item.icon);
+        }
     }
 }

@@ -9,10 +9,9 @@ public class PlaceableObject
     public Item placedItem;
     public Transform targetObject;
     public Vector3Int positionOnGrid;
-    public PlaceableObject(Item item, Transform target, Vector3Int pos)
+    public PlaceableObject(Item item, Vector3Int pos)
     {
         placedItem = item;
-        targetObject = target;
         positionOnGrid = pos;                                                                                                         
     }
 }

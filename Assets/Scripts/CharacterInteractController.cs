@@ -40,7 +40,7 @@ public class CharacterInteractController : MonoBehaviour
                     Interactable hit = c.GetComponent<Interactable>();
                     if (hit != null)
                     {
-                        hit.Interact();
+                        hit.Interact(character);
                         break;
                     }
                 }
