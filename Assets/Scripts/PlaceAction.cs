@@ -7,13 +7,17 @@ public class PlaceAction : ToolAction
 {
     public override bool OnApplyToTileMap(Vector3Int gridPosition, TileMapReadController tileMapReadController, Item item)
     {
-
+        if(tileMapReadController.objectsManager.Check(gridPosition) == true)
+        {
+            return false;   
+        }
         tileMapReadController.objectsManager.Place(item,gridPosition);
         return true;
     }
 
-    public override void OnItemUsed(Item useItem, ItemContainer inventory)
+    public override void OnItemUsed(Item usedItem, ItemContainer inventory)
     {
-        base.OnItemUsed(useItem, inventory);
+        inventory.Remove(usedItem);
     }
+
 }

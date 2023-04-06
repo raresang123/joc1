@@ -25,10 +25,10 @@ MonoBehaviour:
     count: 0
   - item: {fileID: 11400000, guid: a4d8ef55b47af6946b894e72feab700b, type: 2}
     count: 33
-  - item: {fileID: 11400000, guid: 3307e62eb1242db4e8f5338f0f6bdfc4, type: 2}
-    count: 10
-  - item: {fileID: 11400000, guid: 3307e62eb1242db4e8f5338f0f6bdfc4, type: 2}
-    count: 1
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}

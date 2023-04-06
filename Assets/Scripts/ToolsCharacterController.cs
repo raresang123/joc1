@@ -106,53 +106,35 @@ public class ToolsCharacterController : MonoBehaviour
 
     private void UseToolGrid()
     {
-         if(selectable == true)
-         {
+        if (selectable == true)
+        {
 
             Item item = toolbarController.GetItem;
-            if (item == null) {
+            if (item == null)
+            {
                 PickUpTile();
-                return ; }
+                return;
+            }
             if (item.onTileMapAction == null) { return; }
-            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition,tileMapReadController,item);
-            
-                if(complete == true )
-                {
-                    if(item.onItemUsed != null)
+            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, tileMapReadController, item);
+
+            if (complete == true)
+            {
+                if (item.onItemUsed != null)
 
                     item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);
 
-                }
-
-     void PickUpTile()
-            {
-                if(onTilePickUp == null )
-                {
-                     return ;
-                }
-                onTilePickUp.OnApplyToTileMap(selectedTilePosition, tileMapReadController, null);
             }
-
-           
-            // TileBase tileBase = tileMapReadController.GetTileBase(selectedTilePosition);
-            //TileData tileData = tileMapReadController.GetTileData(tileBase);
-
-
-            //if( tileData != plowableTiles)
-            //{
-            //    return;
-            //}
-
-            //if(cropsManager.Check(selectedTilePosition))
-            //{
-            //    cropsManager.Seed(selectedTilePosition);
-            //}
-            //else
-            //{
-            //    cropsManager.Plow(selectedTilePosition);
-            //}
-
         }
     }
+
+    void PickUpTile()
+    {
+        if (onTilePickUp == null)
+        {
+            return;
+        }
+        onTilePickUp.OnApplyToTileMap(selectedTilePosition, tileMapReadController, null);
+    }   
 }
 

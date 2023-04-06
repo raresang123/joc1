@@ -19,7 +19,7 @@ public class PlaceableObjectManager : MonoBehaviour
     {
         for(int i=0; i <placeableObjects.placeableObjects.Count; i++)
         {
-            placeableObjects.placeableObjects[i].targetObject = null;
+            placeableObjects.placeableObjects[i].targetObject = null;   
         }
     }
 
@@ -31,6 +31,15 @@ public class PlaceableObjectManager : MonoBehaviour
         }
     }
 
+    internal void PickUp(Vector3Int gridPosition)
+    {
+        PlaceableObject placedObject = placeableObjects.Get(gridPosition);
+        if (placedObject == null) { return; }
+        ItemSpawnManager.instance.SpawnItem(targetTilemap.CellToWorld(gridPosition), placedObject.placedItem, 1);
+        Destroy(placedObject.targetObject.gameObject );
+        placeableObjects.Remove(placedObject);
+    }
+
     private void VisualizeItem(PlaceableObject placeableObject)
     {
         GameObject go = Instantiate(placeableObject.placedItem.itemPrefab);
@@ -39,11 +48,17 @@ public class PlaceableObjectManager : MonoBehaviour
         placeableObject.targetObject = go.transform;
 
     }
+    public bool Check(Vector3Int position)
+    {
+        return placeableObjects.Get(position) != null;
+    }
     public void Place(Item item, Vector3Int positionOnGrid) 
     {
-
+        if(Check(positionOnGrid) == true) { return; }
         PlaceableObject placeableObject = new PlaceableObject(item, positionOnGrid);
         VisualizeItem(placeableObject);
         placeableObjects.placeableObjects.Add(placeableObject);
     }
+
+  
 }
