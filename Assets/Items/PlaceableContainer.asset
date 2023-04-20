@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f90d79920607984a86d7fdde5c83df5, type: 3}
   m_Name: PlaceableContainer
   m_EditorClassIdentifier: 
-  placeableObjects: []
+  placeableObjects:
+  - placedItem: {fileID: 11400000, guid: 3307e62eb1242db4e8f5338f0f6bdfc4, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 21, y: -4, z: 0}
+    objectState: '{"itemDatas":[{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":6,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0}]}'
+  - placedItem: {fileID: 11400000, guid: 3307e62eb1242db4e8f5338f0f6bdfc4, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: 28, y: -9, z: 0}
+    objectState: '{"itemDatas":[{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":6,"count":1},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":3,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0},{"itemId":-1,"count":0}]}'

@@ -12,6 +12,9 @@ public class DayTimeController : MonoBehaviour
     [SerializeField] Color nightLightColor;
     [SerializeField] AnimationCurve nightTimeCurve;
     [SerializeField] Color dayLightColor = Color.white;
+    [SerializeField] float morningTime = 28800f;
+
+
 
     float time;
 
@@ -28,7 +31,7 @@ public class DayTimeController : MonoBehaviour
         agents = new List<TimeAgent>();
 
     }
-   
+
 
     public void Subscribe(TimeAgent timeAgent)
     {
@@ -100,6 +103,27 @@ public class DayTimeController : MonoBehaviour
         time = 0;
         days += 1;
 
+    }
+
+    public void SkipTime(float seconds = 0, float minute= 0, float hours = 0)
+    {
+        float timeToSkip = seconds;
+        timeToSkip += minute * 60f;
+        timeToSkip += hours * 3600f;
+        time += timeToSkip;
+    }
+    public void SkipToMorning()
+    {
+        float secondsToSkip = 0f;
+        if(time > morningTime)
+        {
+            secondsToSkip += secondsInDay - time + morningTime;
+        }
+        else
+        {
+            secondsToSkip += morningTime - time;
+        }
+        SkipTime(secondsToSkip);
     }
 
 }

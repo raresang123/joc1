@@ -25,6 +25,7 @@ public class Transition : MonoBehaviour
          switch(transitionType)
         {
             case TransitionType.Warp:
+                toTransition.position = new Vector3(destination.position.x, destination.position.y, toTransition.position.z);
                 break;
             case TransitionType.Scene:
                 GameSceneManager.instance.SwitchScene(sceneNameToTransition,targetPositon);

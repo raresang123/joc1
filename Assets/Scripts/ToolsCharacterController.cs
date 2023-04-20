@@ -17,8 +17,10 @@ public class ToolsCharacterController : MonoBehaviour
    [SerializeField] TileData plowableTiles;
    [SerializeField] ToolAction onTilePickUp;
     [SerializeField] IconHighlight iconHighlight;
+    Character characterStats;
+    
 
-   
+
 
     Vector3Int selectedTilePosition;
     bool selectable;
@@ -28,6 +30,7 @@ public class ToolsCharacterController : MonoBehaviour
         character = GetComponent<PlayerController>();
         rgbd2d = GetComponent<Rigidbody2D>();
         toolbarController = GetComponent<ToolbarController>();
+        characterStats = GetComponent<Character>();
     }
     private void Update()
     {   
@@ -77,10 +80,10 @@ public class ToolsCharacterController : MonoBehaviour
 
         if (complete == true)
         {
+            characterStats.GetTired(20);
             if (item.onItemUsed != null)
 
                 item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);
-
         }
         //Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
         //foreach (Collider2D c in colliders)

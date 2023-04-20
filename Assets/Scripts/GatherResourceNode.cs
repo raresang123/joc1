@@ -18,6 +18,7 @@ public class GatherResourceNode : ToolAction
 {
     [SerializeField] float sizeOfInteractableArea = 1f;
     [SerializeField] List<ResourceNodeType> canHitNodeTypes;
+    
 
     public override bool OnApply(Vector2 worldPoint)
         
@@ -37,6 +38,7 @@ public class GatherResourceNode : ToolAction
                         if(hit.CanBeHit(canHitNodeTypes)==true)
                         {
                             hit.Hit();
+                            
                             return true;
                         }
                         

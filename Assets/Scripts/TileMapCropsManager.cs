@@ -8,14 +8,15 @@ public class TileMapCropsManager : TimeAgent
 {
     [SerializeField] TileBase plowed;
     [SerializeField] TileBase seeded;
+    [SerializeField] TileBase basee;
+
+
     Tilemap targetTilemap;
     [SerializeField] GameObject cropsSpritePrefab;
     [SerializeField] CropContainer container ;
-    Dictionary<Vector2Int, CropTile> cropTile;
 
     private void Start()
     {
-        cropTile = new Dictionary<Vector2Int, CropTile>();
         GameManager.instance.GetComponent<CropsManager>().cropsManager = this;
         targetTilemap = GetComponent<Tilemap>();
         onTimeTick += Tick;
@@ -96,11 +97,14 @@ public class TileMapCropsManager : TimeAgent
     }
 
      public void VisualizeTile(CropTile cropTile)
-    {    
-        
-        targetTilemap.SetTile(cropTile.position,cropTile.crop != null ? seeded : plowed);
-        
-        if(cropTile.renderer == null)
+    {
+
+           // targetTilemap.SetTile(cropTile.position, cropTile.crop != null ? seeded : plowed);
+            targetTilemap.SetTile(cropTile.position,  basee);
+
+
+
+        if (cropTile.renderer == null)
         {
              GameObject go=Instantiate(cropsSpritePrefab);
              go.transform.position=targetTilemap.CellToWorld(cropTile.position);
@@ -122,15 +126,16 @@ public class TileMapCropsManager : TimeAgent
     {
  
         Vector2Int position = (Vector2Int)gridPosition ;
-        
-         CropTile tile = cropTile[position];
-        if(tile == null ) { return;}
+
+        CropTile tile = container.Get(gridPosition);
+        if (tile == null ) { return;}
         if (tile.Complete)
         {
             ItemSpawnManager.instance.SpawnItem(targetTilemap.CellToWorld(gridPosition), tile.crop.yield, tile.crop.count );
          
             tile.Harvested();
             VisualizeTile(tile);
+            container.Delete(tile.position);
 
         }
     }

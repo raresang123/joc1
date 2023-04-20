@@ -24,7 +24,6 @@ public class CharacterInteractController : MonoBehaviour
         {
             Interact();
         }
-
     }
 
     public void Interact()

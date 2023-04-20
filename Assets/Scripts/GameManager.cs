@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
      public ItemContainer inventoryContainer;
      public InventoryDragAndDrop1 dragAndDropController;
      public DayTimeController timeController;
-    public PlaceableObjectReferenceManager placeableObjects;
+     public PlaceableObjectReferenceManager placeableObjects;
+    public ScreenTint screeTint;
+    public ItemList itemDB;
 
 }

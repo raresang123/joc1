@@ -21,7 +21,6 @@ public class PlaceableObjectReferenceManager : MonoBehaviour
     {
         if (placeableObjectsManager == null)
         {
-            Debug.LogWarning("adssad");
             return;
         }
         placeableObjectsManager.PickUp(gridPosition);

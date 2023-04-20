@@ -8,7 +8,7 @@ public class TilePickUpAction : ToolAction
 {
     public override bool OnApplyToTileMap(Vector3Int gridPosition, TileMapReadController tileMapReadController, Item item)
     {
-        //tileMapReadController.cropsManager.PickUp(gridPosition);
+        tileMapReadController.cropsManager.PickUp(gridPosition);
         tileMapReadController.objectsManager.PickUp(gridPosition);
         return true;
     }

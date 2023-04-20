@@ -134,7 +134,7 @@ TextureImporter:
         width: 252
         height: 514
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,6 +142,27 @@ TextureImporter:
       bones: []
       spriteID: eba6a35c7d970d34eba7f3bb4b21a835
       internalID: -1435305069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fantana
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 143
+        width: 192
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c77e2273139124687aa16534a5c48c
+      internalID: 993268051
       vertices: []
       indices: 
       edges: []
@@ -158,6 +179,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Mill: -1435305069
+      fantana: 993268051
       Siloz1: -753635190
   spritePackingTag: 
   pSDRemoveMatte: 0
