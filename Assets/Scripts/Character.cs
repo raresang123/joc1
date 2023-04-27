@@ -39,6 +39,16 @@ public class Character : MonoBehaviour
     public bool isExhausted;
     [SerializeField] StatusBar hpBar;
     [SerializeField] StatusBar staminaBar;
+    DisableControls disableControls;
+    PlayerRespawn playerRespawn;
+
+
+    private void Awake()
+    {
+        disableControls = GetComponent<DisableControls>();
+        playerRespawn = GetComponent<PlayerRespawn>();
+    }
+
 
     private void Start()
     {
@@ -59,13 +69,25 @@ public class Character : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        if (isDead == true) { return; }
+        GameManager.instance.messageSystem.PostMessage(transform.position,amount.ToString());
         hp.Subtract(amount);
-        if (hp.currVal <= 0)
+        
+
+        if (hp.currVal <= 0 && isDead!=true)
         {
-            isDead = true;
+            Dead();
         }
         UpdateHpBar();
     }
+
+    private void Dead()
+    {
+        isDead = true;
+        disableControls.DisableControl();
+        playerRespawn.StartRespawn();
+    }
+
     public void Heal(int amount)
     {
         hp.Add(amount);
@@ -73,6 +95,7 @@ public class Character : MonoBehaviour
     }
     public void FullHeal()
     {
+        isDead = false;
         hp.SetToMax();
         UpdateHpBar();
     }

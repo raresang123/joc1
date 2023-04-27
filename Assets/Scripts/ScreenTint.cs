@@ -11,7 +11,7 @@ public class ScreenTint : MonoBehaviour
     Color tintedColor;
     Image image;
     float f;
-    [SerializeField] float speed = 1f;
+    [SerializeField] public float speed = 1f;
     private void Awake()
     {
       

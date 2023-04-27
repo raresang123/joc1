@@ -16,6 +16,7 @@ public class NpcController : Interactable
     [SerializeField] float maxDistance = 1.5f;
     private bool selectable;
     private bool tame=false;
+    private Vector2 previousPosition;
    
 
     void Start()
@@ -25,9 +26,11 @@ public class NpcController : Interactable
         myTransform = GetComponent<Transform>();
         rigidBody2D = GetComponent<Rigidbody2D>();
         ChangeDirection();
+        previousPosition = rigidBody2D.position;
     }
     void Update()
     {
+        
         if (tame == false)
         {
         Move();
@@ -46,7 +49,7 @@ public class NpcController : Interactable
             tame = true;
             return;
         }
-
+        
 
 
     }
@@ -54,38 +57,48 @@ public class NpcController : Interactable
     private void FollowCharacter() 
     {
         float distance = Vector3.Distance(transform.position, character.position);
-        if (distance < 1f)
+        if (distance < 1.5f)
         {
             return;
         }
-
         rigidBody2D.position = Vector3.MoveTowards(
            rigidBody2D.position, character.position, speed * Time.deltaTime
-        );
+           );
 
         UpdateAnimationTame();
     }
 
     void UpdateAnimationTame()
     {
-        if (character.position.x > 0)
-        {
-            directionVector = Vector3.right;
-        }
-        if (character.position.x < 0)
-        {
-            directionVector = Vector3.left;
-        }
-        if (character.position.y > 0)
-        {
-            directionVector= Vector3.up;
-        }
-        if (character.position.y < 0)
-        {
-            directionVector = Vector3.down;
-        }
-        UpdateAnimation();
+        Vector2 direction = (rigidBody2D.position - previousPosition).normalized;
+        float x = Mathf.Abs(direction.x);
+        float y = Mathf.Abs(direction.y);
 
+        if (x > y)
+        {
+            if (direction.x > 0)
+            {
+                directionVector = Vector2.right;
+            }
+            else if (direction.x < 0)
+            {
+                directionVector = Vector2.left;
+            }
+        }
+        else
+        {
+            if (direction.y > 0)
+            {
+                directionVector = Vector2.up;
+            }
+            else if (direction.y < 0)
+            {
+                directionVector = Vector2.down;
+            }
+        }
+
+        UpdateAnimation();
+        previousPosition = rigidBody2D.position;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
