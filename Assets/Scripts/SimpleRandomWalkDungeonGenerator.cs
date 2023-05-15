@@ -18,7 +18,13 @@ public class SimpleRandomWalkDungeonGenerator : MonoBehaviour
     public bool startRandomlyEachIteration = true;
     [SerializeField]
     private TilemapVisualizer tilemapVisualizer;
-
+    [SerializeField] Camera camera;
+    void Start()
+    {
+        camera.orthographicSize = 30;
+        RunProceduralGeneration();
+        camera.transform.position = Vector3.Lerp(camera.transform.position, camera.position, 1);
+    }
     public void RunProceduralGeneration()
     {
         HashSet<Vector2Int> floorPositions = RunRandomWalk();

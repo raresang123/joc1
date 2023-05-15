@@ -14,9 +14,12 @@ public class Transition : MonoBehaviour
     [SerializeField] TransitionType transitionType;
     [SerializeField] string sceneNameToTransition;
     [SerializeField] Vector3 targetPositon;
-    Transform destination; 
+    Transform destination;
+
+
     void Start()
     {
+        
         destination = transform.GetChild(1);
     }
     
