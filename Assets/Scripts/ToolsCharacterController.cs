@@ -85,25 +85,6 @@ public class ToolsCharacterController : MonoBehaviour
 
                 item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);
         }
-        //Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
-        //foreach (Collider2D c in colliders)
-        //{
-        //    if (Input.GetMouseButtonDown(0))
-        //    {
-        //        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        //        if (c.OverlapPoint(mousePosition))
-        //        {
-        //            ToolHit hit = c.GetComponent<ToolHit>();
-        //            if (hit != null)
-        //            {
-        //                hit.Hit();
-        //               return true;
-        //            }
-        //        }
-        //    }
-
-        //}
         return complete;
     }
 
