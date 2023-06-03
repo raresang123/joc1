@@ -6,7 +6,8 @@ public enum ResourceNodeType
 {
 Undifined,
 Tree,
-Rock
+Rock,
+Enemy
 
 
 }

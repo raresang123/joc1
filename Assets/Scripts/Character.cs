@@ -121,10 +121,7 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.D))
-        {
-            TakeDamage(10);
-        }
+        
     }
 
 }

@@ -176,7 +176,7 @@ TextureImporter:
         width: 24
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,6 +184,27 @@ TextureImporter:
       bones: []
       spriteID: bff5ef4863ba78f46aaf9f14a329d55f
       internalID: 643961997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabie
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 678
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b9743255937d64d9a502a39de6146e
+      internalID: -1161669948
       vertices: []
       indices: 
       edges: []
@@ -199,6 +220,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Sabie: -1161669948
       Sapa: -296662650
       Topor: 694879692
       Rosie: 643961997

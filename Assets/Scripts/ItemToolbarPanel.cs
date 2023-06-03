@@ -14,7 +14,7 @@ public class ItemToolbarPanel : ItemPanel
     public override void OnClick(int id)
     {
         toolbarController.Set(id);
-        Debug.Log(id);
+   
         Highlight(id);
     }
     int currentSelectedTool;

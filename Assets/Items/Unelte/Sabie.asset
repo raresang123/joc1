@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1afac274becbae54c854722ec97a693f, type: 3}
+  m_Name: Sabie
+  m_EditorClassIdentifier: 
+  Name: 
+  stackable: 0
+  icon: {fileID: -1759763848, guid: 790a164b7691fd44abad27c0d05636ac, type: 3}
+  onAction: {fileID: 11400000, guid: 38a160b895c835742900b857e3fbad1c, type: 2}
+  onTileMapAction: {fileID: 0}
+  onItemUsed: {fileID: 0}
+  onCombat: {fileID: 0}
+  crop: {fileID: 0}
+  itemPrefab: {fileID: 0}
+  iconHighlight: 0
+  id: 8
