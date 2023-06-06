@@ -12,11 +12,33 @@ public class TreeCuttable : ToolHit
     [SerializeField] int itemCountInOneDrop =1;
     [SerializeField] ResourceNodeType nodeType;
     int damageTree = 2;
+    public Rigidbody2D enemy;
+    private Transform myTransform;
+
+
+
+    private void Start()
+    {
+        enemy = GetComponent<Rigidbody2D>();
+        myTransform = GetComponent<Transform>();
+    }
 
     public override void Hit()
     {
         if (damageTree == 0)
         {
+            if (nodeType == ResourceNodeType.Enemy)
+            {
+
+                if (enemy)
+                {
+                    Debug.Log("g");
+                    Vector2 direction = (transform.position - enemy.transform.position).normalized;
+                    enemy.AddForce(direction * 16, ForceMode2D.Impulse);
+                }
+            }
+
+
             while (dropCount > 0)
             {
                 dropCount -= 1;
