@@ -18,6 +18,8 @@ MonoBehaviour:
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 11400000, guid: 1b9529ec9258ab14796597c507ca2d50, type: 2}
   onItemUsed: {fileID: 11400000, guid: 1b9529ec9258ab14796597c507ca2d50, type: 2}
+  onStatsUsed: {fileID: 11400000, guid: 76486a2f51eb4984d890310d461beed2, type: 2}
+  onCombat: {fileID: 0}
   crop: {fileID: 11400000, guid: 29738d80bb1b3a544b6b4543a5bcd2f2, type: 2}
   itemPrefab: {fileID: 0}
   iconHighlight: 0

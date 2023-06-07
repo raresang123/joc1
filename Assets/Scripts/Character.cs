@@ -21,7 +21,7 @@ public class Stat
     }
     internal void Add(int amount)
     {
-        currVal -= amount;
+        currVal += amount;
         if(currVal > maxVal) { currVal = maxVal; }
     }
     internal void SetToMax()

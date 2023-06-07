@@ -46,6 +46,10 @@ public class ToolsCharacterController : MonoBehaviour
             UseToolGrid();
 
         }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
+            UseUniversalTool();
+        }
     }
     private void SelectTile()
     {
@@ -110,6 +114,19 @@ public class ToolsCharacterController : MonoBehaviour
 
             }
         }
+    }
+
+    private void UseUniversalTool()
+    {
+            Item item = toolbarController.GetItem;
+            if (item)
+            {
+                if (item.onStatsUsed != null)
+                    {
+                        item.onStatsUsed.OnItemUsed(item, GameManager.instance.inventoryContainer, characterStats);
+                        return;
+                    }    
+            }
     }
 
     void PickUpTile()

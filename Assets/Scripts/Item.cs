@@ -13,6 +13,7 @@ public class Item : ScriptableObject
     public ToolAction onAction;
     public ToolAction onTileMapAction;
     public ToolAction onItemUsed;
+    public ToolAction onStatsUsed;
     public ToolAction onCombat;
     public Crop crop;
     public GameObject itemPrefab;

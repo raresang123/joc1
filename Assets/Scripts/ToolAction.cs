@@ -17,5 +17,9 @@ public class ToolAction : ScriptableObject
     {
         
     }
+    public virtual void OnItemUsed(Item useItem, ItemContainer inventory, Character characterStats)
+    {
+
+    }
 
 }
