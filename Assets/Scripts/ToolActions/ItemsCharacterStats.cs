@@ -10,5 +10,6 @@ public class ItemsCharacterStats : ToolAction
     {
         inventory.Remove(useItem);
         characterStats.Heal(50);
+        characterStats.Rest(100);
     }
 }
