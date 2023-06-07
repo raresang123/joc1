@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 879b91788f13be14da9d9e7ae796946f
+guid: fc348896ab51a27418897ed51db22521
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,64 +105,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: md1
+      name: 3 idle (1)_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 2
         y: 16
-        width: 14
+        width: 12
         height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ebea517a4f32ac45901a394c7b53e8b
-      internalID: -189163969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3 idle_0
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 16
-        width: 14
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e485b977dcc5be41ac44ed3efe1a8fe
-      internalID: 1896164169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3 idle_1
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 16
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc2841b865a415a4e9ed4f5ffaf248dc
-      internalID: -563239997
+      spriteID: c63bece11b4bce04db4fbef5658f86ab
+      internalID: 563063058
       vertices: []
       indices: 
       edges: []
@@ -178,12 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      3 idle_4: -1413432816
-      3 idle_0: 1896164169
-      3 idle_3: -792674192
-      md1: -189163969
-      3 idle_2: 893784867
-      3 idle_1: -563239997
+      3 idle (1)_0: 563063058
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

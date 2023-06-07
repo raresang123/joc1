@@ -19,6 +19,7 @@ public class GatherResourceNode : ToolAction
 {
     [SerializeField] float sizeOfInteractableArea = 1f;
     [SerializeField] List<ResourceNodeType> canHitNodeTypes;
+    Animator anim;
     
 
     public override bool OnApply(Vector2 worldPoint)
@@ -29,6 +30,7 @@ public class GatherResourceNode : ToolAction
         {
             if (Input.GetMouseButtonDown(0))
             {
+                
                 Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
                 if (c.OverlapPoint(mousePosition))

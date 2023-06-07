@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 879b91788f13be14da9d9e7ae796946f
+guid: 494055b00d3e9e04d85cf36a7d7988f6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,64 +105,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: md1
+      name: flipmv (1)_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 16
-        width: 14
-        height: 15
+        x: 10
+        y: 104
+        width: 12
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ebea517a4f32ac45901a394c7b53e8b
-      internalID: -189163969
+      spriteID: 462ebf412cac6484bb52fe9b1886c5c6
+      internalID: 1991537440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3 idle_0
+      name: flipmv (1)_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 16
-        width: 14
-        height: 15
+        x: 10
+        y: 72
+        width: 12
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e485b977dcc5be41ac44ed3efe1a8fe
-      internalID: 1896164169
+      spriteID: 2b0ee0478db4cdb42986e3c71e42f03b
+      internalID: -1350401479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3 idle_1
+      name: flipmv (1)_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 16
-        width: 13
-        height: 15
+        x: 8
+        y: 40
+        width: 14
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc2841b865a415a4e9ed4f5ffaf248dc
-      internalID: -563239997
+      spriteID: f6d12966717804e4284753bc408cc678
+      internalID: 1488480490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipmv (1)_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41214095028b7444f9e4a73598512f89
+      internalID: 49099718
       vertices: []
       indices: 
       edges: []
@@ -178,12 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      3 idle_4: -1413432816
-      3 idle_0: 1896164169
-      3 idle_3: -792674192
-      md1: -189163969
-      3 idle_2: 893784867
-      3 idle_1: -563239997
+      flipmv (1)_3: 49099718
+      flipmv (1)_1: -1350401479
+      flipmv (1)_0: 1991537440
+      flipmv (1)_2: 1488480490
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

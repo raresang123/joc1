@@ -27,7 +27,7 @@ public class TreeCuttable : ToolHit
     {
         if (damageTree == 0)
         {
-            if (nodeType == ResourceNodeType.Enemy)
+            /*if (nodeType == ResourceNodeType.Enemy)
             {
 
                 if (enemy)
@@ -36,7 +36,7 @@ public class TreeCuttable : ToolHit
                     Vector2 direction = (transform.position - enemy.transform.position).normalized;
                     enemy.AddForce(direction * 16, ForceMode2D.Impulse);
                 }
-            }
+            }*/
 
 
             while (dropCount > 0)
