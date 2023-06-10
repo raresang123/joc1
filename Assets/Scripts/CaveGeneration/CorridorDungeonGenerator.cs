@@ -12,17 +12,9 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
     [Range(0.1f, 1)]
     private float roomPercent = 0.8f;
 
-    private HashSet<Vector2Int> floorPositions = new HashSet<Vector2Int>();
-    CaveData caveData;
-
-    RoomDataExtractor roomDataExtractor;
-
-    void Start()
+    public void Generate()
     {
-        caveData =gameObject.AddComponent<CaveData>(); 
-        tilemapVisualizer.Clear();
         RunProceduralGeneration();
-        roomDataExtractor = gameObject.AddComponent<RoomDataExtractor>();
     }
 
     protected override void RunProceduralGeneration()
@@ -32,8 +24,7 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
 
     private void CorridorFirstGeneration()
     {
-        caveData.Reset();
-
+        HashSet<Vector2Int> floorPositions = new HashSet<Vector2Int>();
         HashSet<Vector2Int> potentialRoomPositions = new HashSet<Vector2Int>();
 
         List<List<Vector2Int>> corridors=CreateCorridors(floorPositions, potentialRoomPositions);
@@ -41,7 +32,7 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
         HashSet<Vector2Int> roomPositions = CreateRooms(potentialRoomPositions);
 
         List<Vector2Int> deadEnds = FindAllDeadEnds(floorPositions);
-        caveData.Path = roomPositions;
+
         CreateRoomsAtDeadEnd(deadEnds, roomPositions);
 
         floorPositions.UnionWith(roomPositions);
@@ -56,7 +47,6 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
         tilemapVisualizer.PaintFloorTiles(floorPositions);
         WallGenerator.CreateWalls(floorPositions, tilemapVisualizer);
 
-        roomDataExtractor.ProcessRooms(caveData);
     }
 
     private List<Vector2Int> IncreaseCorridorBrush3by3(List<Vector2Int> corridor)
@@ -114,12 +104,8 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
 
         foreach (var roomPosition in roomsToCreate)
         {
-
             var roomFloor = RunRandomWalk(randomWalkParameters, roomPosition);
             roomPositions.UnionWith(roomFloor);
-            Room room=new Room(roomPosition, roomFloor);
-            caveData.Rooms.Add(room);
-            
         }
         return roomPositions;
     }
