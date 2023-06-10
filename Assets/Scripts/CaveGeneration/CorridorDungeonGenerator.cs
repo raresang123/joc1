@@ -11,6 +11,8 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
     [SerializeField]
     [Range(0.1f, 1)]
     private float roomPercent = 0.8f;
+    private DungeonData dungeonData;
+
 
     public void Generate()
     {
@@ -19,11 +21,18 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
 
     protected override void RunProceduralGeneration()
     {
+        dungeonData = FindObjectOfType<DungeonData>();
+        if (dungeonData == null)
+            dungeonData = gameObject.AddComponent<DungeonData>();
         CorridorFirstGeneration();
     }
 
     private void CorridorFirstGeneration()
     {
+        dungeonData.Reset();
+
+
+
         HashSet<Vector2Int> floorPositions = new HashSet<Vector2Int>();
         HashSet<Vector2Int> potentialRoomPositions = new HashSet<Vector2Int>();
 
@@ -36,6 +45,8 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
         CreateRoomsAtDeadEnd(deadEnds, roomPositions);
 
         floorPositions.UnionWith(roomPositions);
+
+
 
         for(int i = 0; i < corridors.Count; i++)
         {
@@ -106,6 +117,11 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
         {
             var roomFloor = RunRandomWalk(randomWalkParameters, roomPosition);
             roomPositions.UnionWith(roomFloor);
+
+
+            dungeonData.Rooms.Add(new Room(roomPosition, roomFloor));
+            dungeonData.Path.UnionWith(roomFloor);
+
         }
         return roomPositions;
     }

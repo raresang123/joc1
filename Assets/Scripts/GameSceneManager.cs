@@ -25,7 +25,7 @@ public class GameSceneManager : MonoBehaviour
     void Start()
     {
         currentScene = SceneManager.GetActiveScene().name;
-        caveScene = GetComponent<CorridorDungeonGenerator>();
+        //caveScene = GetComponent<CorridorDungeonGenerator>();
     }
 
     public void InitSwitchScene(string to, Vector3 targetPosition)
@@ -64,10 +64,10 @@ public class GameSceneManager : MonoBehaviour
         load = SceneManager.LoadSceneAsync(to, LoadSceneMode.Additive);
         unload = SceneManager.UnloadSceneAsync(currentScene);
         currentScene = to;
-        if (to == "CaveScene")
-        {
-            caveScene.Generate();
-        }
+        //if (to == "CaveScene")
+        //{
+        //    caveScene.Generate();
+        //}
         MoveCharacter(targetPosition);
     } 
 
