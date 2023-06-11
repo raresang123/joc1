@@ -650,6 +650,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: cave3
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb4d9ad457885b4c820c7007668dede
+      internalID: 153717868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 832
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dcd9f58b470ab42a4bdad069606024
+      internalID: 1715930945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 545
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8681f8a2a1588e34199999bb7d913416
+      internalID: 259011112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dasda
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e831fc640eedf9a4e852abadb4c3a306
+      internalID: 117024091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terrain_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 125
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969eeaab1219e5a4e8507ebe2b715f7a
+      internalID: -1316379568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -664,23 +769,28 @@ TextureImporter:
       morcovUrat: -977289182
       morcovi: -1432227441
       RosieUrata: 905343827
+      dasda: 117024091
       morcov3: -1023620627
       rosie2: 872416922
       vanata3: 1496939731
       ardei3: 1805201934
       vanataUrata: -414595665
+      terrain_atlas_0: 1715930945
       Rosie: 358149361
       morcov2: 1051196617
       vanata: 1666046081
       vanata1: -960388920
       morcov1: -945493822
+      terrain_atlas_1: 259011112
       ardei1: 685346616
       porumb3: 1765356266
       porumb: -1967563373
+      terrain_atlas_2: -1316379568
       ardeiUrat: 1231187048
       vanata2: -973890927
       aa: 906380666
       porumb1: 305762168
+      cave3: 153717868
       ardei2: 399251324
       ardei: 871436156
       porumbUrat: 568872169

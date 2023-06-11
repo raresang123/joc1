@@ -18,12 +18,29 @@ public class PropPlacementManager : MonoBehaviour
     [SerializeField]
     private GameObject propPrefab;
 
-    public UnityEvent OnFinished;
+    [SerializeField]
+    private GameObject enemyPrefab;
+
+    [SerializeField]
+    private int roomEnemiesCount;
 
     private void Awake()
     {
         dungeonData = FindObjectOfType<DungeonData>();
     }
+
+    private void PlaceEnemies(Room room, int enemiesCount)
+    {
+        for (int k = 0; k < enemiesCount; k++)
+        {
+            var aux = UnityEngine.Random.Range(0, room.InnerTiles.Count);
+            GameObject enemy = Instantiate(enemyPrefab);
+            enemy.transform.localPosition =new Vector3( room.InnerTiles.ElementAt(aux).x, room.InnerTiles.ElementAt(aux).y,0);
+            room.EnemiesInTheRoom.Add(enemy);  
+            room.InnerTiles.Remove(room.InnerTiles.ElementAt(aux));
+        }
+    }
+
 
     public void ProcessRooms()
     {
@@ -31,6 +48,16 @@ public class PropPlacementManager : MonoBehaviour
             return;
         foreach (Room room in dungeonData.Rooms)
         {
+            if (roomEnemiesCount>0)
+            {
+            int enemiesCount = UnityEngine.Random.Range(3, roomEnemiesCount);
+            roomEnemiesCount -= enemiesCount;
+            PlaceEnemies(room, enemiesCount);
+            }
+            
+
+
+
             //Place props place props in the corners
             List<Prop> cornerProps = propsToPlace.Where(x => x.Corner).ToList();
             PlaceCornerProps(room, cornerProps);
@@ -146,12 +173,6 @@ public class PropPlacementManager : MonoBehaviour
                     //Hashest will ignore duplicate positions
                     room.PropPositions.Add(pos);
                 }
-
-                //Deal with groups
-                if (propToPlace.PlaceAsGroup)
-                {
-                    PlaceGroupObject(room, position, propToPlace, 1);
-                }
                 return true;
             }
         }
@@ -245,61 +266,12 @@ public class PropPlacementManager : MonoBehaviour
                     = cornerProps[UnityEngine.Random.Range(0, cornerProps.Count)];
 
                 PlacePropGameObjectAt(room, cornerTile, propToPlace);
-                if (propToPlace.PlaceAsGroup)
-                {
-                    PlaceGroupObject(room, cornerTile, propToPlace, 2);
-                }
             }
             else
             {
                 tempChance = Mathf.Clamp01(tempChance + 0.1f);
             }
         }
-    }
-
-    /// <summary>
-    /// Helps to find free spaces around the groupOriginPosition to place a prop as a group
-    /// </summary>
-    /// <param name="room"></param>
-    /// <param name="groupOriginPosition"></param>
-    /// <param name="propToPlace"></param>
-    /// <param name="searchOffset">The search offset ex 1 = we will check all tiles withing the distance of 1 unity away from origin position</param>
-    private void PlaceGroupObject(
-        Room room, Vector2Int groupOriginPosition, Prop propToPlace, int searchOffset)
-    {
-        //*Can work poorely when placing bigger props as groups
-
-        //calculate how many elements are in the group -1 that we have placed in the center
-        int count = UnityEngine.Random.Range(propToPlace.GroupMinCount, propToPlace.GroupMaxCount) - 1;
-        count = Mathf.Clamp(count, 0, 8);
-
-        //find the available spaces around the center point.
-        //we use searchOffset to limit the distance between those points and the center point
-        List<Vector2Int> availableSpaces = new List<Vector2Int>();
-        for (int xOffset = -searchOffset; xOffset <= searchOffset; xOffset++)
-        {
-            for (int yOffset = -searchOffset; yOffset <= searchOffset; yOffset++)
-            {
-                Vector2Int tempPos = groupOriginPosition + new Vector2Int(xOffset, yOffset);
-                if (room.FloorTiles.Contains(tempPos) &&
-                    !dungeonData.Path.Contains(tempPos) &&
-                    !room.PropPositions.Contains(tempPos))
-                {
-                    availableSpaces.Add(tempPos);
-                }
-            }
-        }
-
-        //shuffle the list
-        availableSpaces.OrderBy(x => Guid.NewGuid());
-
-        //place the props (as many as we want or if there is less space fill all the available spaces)
-        int tempCount = count < availableSpaces.Count ? count : availableSpaces.Count;
-        for (int i = 0; i < tempCount; i++)
-        {
-            PlacePropGameObjectAt(room, availableSpaces[i], propToPlace);
-        }
-
     }
 
     /// <summary>

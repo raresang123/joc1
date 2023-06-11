@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float timeToAttack = 2f;
     private Animator anim;
     float attackTimer;
-    // Start is called before the first frame update
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -25,7 +25,6 @@ public class Enemy : MonoBehaviour
        
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -42,11 +41,6 @@ public class Enemy : MonoBehaviour
 
 
     }
-    //private void Knockback()
-    //{
-    //    Vector2 direction = (transform.position - player.position).normalized;
-    //    rb2d.AddForce(direction * 16, ForceMode2D.Impulse);
-    //}
     private void Attack()
     {
         attackTimer -= Time.deltaTime;
@@ -62,7 +56,6 @@ public class Enemy : MonoBehaviour
             if (character != null)
             {
                 character.TakeDamage(damage);
-                //Knockback();
             }
         }
         

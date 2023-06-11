@@ -646,6 +646,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: cavefloor
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1294
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb00a6e8227300f4caa08edce72d82d4
+      internalID: 62399171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavefloor2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1819
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.51881045, y: 0.4689514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6306f51e648d75c4aa0a15f682959c43
+      internalID: 1828620706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature_t_5
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 2132
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e1d8846c6fd2a45b2deafcdef987a3
+      internalID: -1740490748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -660,6 +723,7 @@ TextureImporter:
       Marker: 813300983
       plowed: -1693344645
       babyCopacel: 610975585
+      cavefloor2: 1828620706
       kk: 2045394075
       gardVertical: 855905973
       Piatra1: 508685802
@@ -675,12 +739,14 @@ TextureImporter:
       gardOrizontal: 1843267778
       copacUscat: -1792182821
       iarbaMica: 560336817
+      cavefloor: 62399171
       PiatraMica: 1732468502
       GardAlb: 954401685
       nature_t_4: 1150538332
       babyCopace: -251272672
       nature_t_2: -2013567022
       nature_t_1: -1741393091
+      nature_t_5: -1740490748
       Grass2: -2110929390
   spritePackingTag: 
   pSDRemoveMatte: 0
