@@ -284,15 +284,15 @@ public class PropPlacementManager : MonoBehaviour
     private GameObject PlacePropGameObjectAt(Room room, Vector2Int placementPostion, Prop propToPlace)
     {
         //Instantiat the prop at this positon
-        GameObject prop = Instantiate(propPrefab);
-        SpriteRenderer propSpriteRenderer = prop.GetComponentInChildren<SpriteRenderer>();
+        GameObject prop = Instantiate(propToPlace.PropPrefab);
+       // SpriteRenderer propSpriteRenderer = prop.GetComponentInChildren<SpriteRenderer>();
 
-        //set the sprite
-        propSpriteRenderer.sprite = propToPlace.PropSprite;
+        ////set the sprite
+        //propSpriteRenderer.sprite = propToPlace.PropSprite;
 
         //Add a collider
         CapsuleCollider2D collider
-            = propSpriteRenderer.gameObject.AddComponent<CapsuleCollider2D>();
+            = prop.gameObject.AddComponent<CapsuleCollider2D>();
         collider.offset = Vector2.zero;
         if (propToPlace.PropSize.x > propToPlace.PropSize.y)
         {
@@ -303,9 +303,6 @@ public class PropPlacementManager : MonoBehaviour
         collider.size = size;
 
         prop.transform.localPosition = (Vector2)placementPostion;
-        //adjust the position to the sprite
-        propSpriteRenderer.transform.localPosition
-            = (Vector2)propToPlace.PropSize * 0.5f;
 
         //Save the prop in the room data (so in the dunbgeon data)
         room.PropPositions.Add(placementPostion);

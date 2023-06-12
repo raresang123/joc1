@@ -14,9 +14,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] float timeToAttack = 2f;
     private Animator anim;
     float attackTimer;
+    public Transform character;
 
     void Start()
     {
+        character = GameManager.instance.player.transform;
         anim = GetComponent<Animator>();
         player = GameManager.instance.player.transform;
         attackTimer = Random.Range(0, timeToAttack);
@@ -27,7 +29,11 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-
+        float distance = Vector3.Distance(transform.position, character.position);
+        if (distance > 6f)
+        {
+            return;
+        }
         transform.position = Vector3.MoveTowards(transform.position,
             player.position,
             speed * Time.deltaTime);

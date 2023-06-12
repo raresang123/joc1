@@ -6,7 +6,7 @@ using UnityEngine;
 public class Prop : ScriptableObject
 {
     [Header("Prop data:")]
-    public Sprite PropSprite;
+    public GameObject PropPrefab;
     /// <summary>
     /// Affects the collider size of the prop
     /// </summary>

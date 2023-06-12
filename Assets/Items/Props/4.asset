@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fd26aa5558dec643b4be646ff2183c9, type: 3}
-  m_Name: 5
+  m_Name: 4
   m_EditorClassIdentifier: 
-  PropSprite: {fileID: 1805201934, guid: ec038d93d4a17ab43870539d95621201, type: 3}
+  PropPrefab: {fileID: 4946917950491282384, guid: df82303766f16c3419825508c9470409, type: 3}
   PropSize: {x: 1, y: 1}
   Corner: 1
-  NearWallUP: 1
+  NearWallUP: 0
   NearWallDown: 1
-  NearWallRight: 1
+  NearWallRight: 0
   NearWallLeft: 1
   Inner: 1
   PlacementQuantityMin: 70

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4946917950491282397}
   - component: {fileID: 4946917950491282386}
   - component: {fileID: 4946917950491282387}
-  - component: {fileID: 4946917950491282396}
+  - component: {fileID: 3138031432013015594}
   m_Layer: 0
   m_Name: copacUscat
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4946917950491282384}
   m_LocalRotation: {x: -0, y: -0, z: -0.003068799, w: 0.9999953}
-  m_LocalPosition: {x: -8.46, y: -2.4899998, z: 0}
+  m_LocalPosition: {x: -8.341, y: -2.203, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 187435901
   m_SortingLayer: 2
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1792182821, guid: 687cd345573be4d4db8f0e9ab5b5f091, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -104,7 +104,8 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: a4d8ef55b47af6946b894e72feab700b, type: 2}
   itemCountInOneDrop: 1
   nodeType: 1
---- !u!61 &4946917950491282396
+  enemy: {fileID: 0}
+--- !u!61 &3138031432013015594
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,10 +118,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009338796, y: -0.760695}
+  m_Offset: {x: 0.55412936, y: 0.52095777}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.07004645, y: 0.025637336}
     oldSize: {x: 1.21875, y: 2.96875}
     newSize: {x: 1.21875, y: 2.96875}
     adaptiveTilingThreshold: 0.5
@@ -128,5 +129,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5542458, y: 0.7123055}
+  m_Size: {x: 0.5164168, y: 0.8253958}
   m_EdgeRadius: 0

@@ -30,8 +30,9 @@ public class Knockback : MonoBehaviour
         if(enemy != null)
         {
             yield return new WaitForSeconds(knocktime);
-            enemy.velocity = Vector2.zero;  
+            enemy.velocity = Vector2.zero;
             enemy.isKinematic = true;
+
 
         }
     }
