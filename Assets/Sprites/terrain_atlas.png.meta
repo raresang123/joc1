@@ -743,7 +743,7 @@ TextureImporter:
         width: 32
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -751,6 +751,48 @@ TextureImporter:
       bones: []
       spriteID: 969eeaab1219e5a4e8507ebe2b715f7a
       internalID: -1316379568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cWall2
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 923
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8db8c586256084c86068676add7b46
+      internalID: 2009558228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stalacmite
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 736
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.0045380592, y: 0.0045394897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfe14d4ebdd2b84fac027a4d410c46e
+      internalID: -208851172
       vertices: []
       indices: 
       edges: []
@@ -766,6 +808,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      porumb2: -621374780
       morcovUrat: -977289182
       morcovi: -1432227441
       RosieUrata: 905343827
@@ -790,13 +833,14 @@ TextureImporter:
       vanata2: -973890927
       aa: 906380666
       porumb1: 305762168
+      cWall2: 2009558228
       cave3: 153717868
       ardei2: 399251324
       ardei: 871436156
       porumbUrat: 568872169
       rosie4: -1356940587
       rosie1: 2131292438
-      porumb2: -621374780
+      stalacmite: -208851172
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

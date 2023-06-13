@@ -214,7 +214,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 475
-        y: 1429
+        y: 1430
         width: 24
         height: 23
       alignment: 0
@@ -709,6 +709,300 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: cave-entrance
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1922
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011536ee536389848b4bfbcb2e7df767
+      internalID: -1086077785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone-wall
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1795
+        width: 15
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc25a7c2bbbff24898f6a49b0089a1e
+      internalID: -508760110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46103f1e706de04a90b9f2c992f31b5
+      internalID: -370176770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_cave
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 1422
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e219aedf6eaaf54aa7033d51be988ed
+      internalID: -1197143392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone1
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 1972
+        width: 27
+        height: 27
+      alignment: 9
+      pivot: {x: -0.00019440828, y: -0.00019440828}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20044c9d6586c1c4b9e62bbdf2cc79a3
+      internalID: -1232798668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone2
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 1986
+        width: 14
+        height: 15
+      alignment: 9
+      pivot: {x: -0.0041155135, y: 0.0013997395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daab141b85d188c4587f002d6ad57472
+      internalID: -2073628322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stone3
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 1971
+        width: 14
+        height: 29
+      alignment: 9
+      pivot: {x: -0.0041155135, y: -0.0012627963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54bc6f17bf83d5b40a945e1a503bd9e7
+      internalID: 1304194287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cave_trunk
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 2578
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: -0.002988577, y: 0.0027923584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb893bfb0e5385478496eaf081684c3
+      internalID: -1376032591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caveWall2
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 850
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b64c182a88c9e4f911a9ea184d32e0
+      internalID: 1932136860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cWall
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1796
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796f0997b1526be4d90e638c5331419e
+      internalID: 91436476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cFloor
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1819
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6092bf9c26f9e3d4db1499303616786e
+      internalID: 1046444398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature_t_6
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 1698
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b233d2fa99739334fa6cd6c24a4d6e98
+      internalID: 207366649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butoi
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 1587
+        width: 18
+        height: 29
+      alignment: 9
+      pivot: {x: -0.0019463433, y: 0.0015153557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6475d4aa897f06e42984faf238d6cb51
+      internalID: -269011297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nature_t_8
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 1556
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29dac3ae9332aaa479d91eafbb8ad11c
+      internalID: -1324217829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -720,30 +1014,44 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      water: -370176770
       Marker: 813300983
+      cave-entrance: -1086077785
       plowed: -1693344645
       babyCopacel: 610975585
       cavefloor2: 1828620706
       kk: 2045394075
+      cFloor: 1046444398
+      stone3: 1304194287
+      stone-wall: -508760110
       gardVertical: 855905973
       Piatra1: 508685802
       copacRoz: 156476888
       nature_t_3: -914013816
+      cWall: 91436476
+      nature_t_8: 229897948
       GardAlb1: -2055764263
       IarbaBuna: -1453658142
       Buruiana: -2110038361
+      nature_t_6: 207366649
+      butoi: -269011297
       nature_t_0: -573938388
       pamant: 1629714937
       Log: -1587948741
       colt: -261936632
+      stone2: -2073628322
       gardOrizontal: 1843267778
       copacUscat: -1792182821
+      grass_cave: -1197143392
+      stone1: -1232798668
       iarbaMica: 560336817
       cavefloor: 62399171
+      cave_trunk: -1376032591
       PiatraMica: 1732468502
       GardAlb: 954401685
       nature_t_4: 1150538332
       babyCopace: -251272672
+      caveWall2: 1932136860
       nature_t_2: -2013567022
       nature_t_1: -1741393091
       nature_t_5: -1740490748

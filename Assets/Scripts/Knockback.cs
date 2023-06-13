@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,8 +31,13 @@ public class Knockback : MonoBehaviour
         if(enemy != null)
         {
             yield return new WaitForSeconds(knocktime);
+
+            try
+            {
             enemy.velocity = Vector2.zero;
             enemy.isKinematic = true;
+            }
+            catch(Exception x) { }
 
 
         }

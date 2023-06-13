@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f2cb709aaceaede429dd86e73a166198
+guid: 9c9369c65b1ee01488751aa7706e6fe6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,85 +105,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: crystal1
+      name: Cave_Trunk1
       rect:
         serializedVersion: 2
-        x: 594
-        y: 512
-        width: 13
-        height: 16
+        x: 114
+        y: 283
+        width: 28
+        height: 29
       alignment: 9
-      pivot: {x: -0.0032254732, y: 0.0027236938}
+      pivot: {x: -0.00081362046, y: 0.0012259647}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 393fa26ab18d189448ee9916c57cd18f
-      internalID: 360900676
+      spriteID: 6a5da7e8492d12a40930ee6b4f50df4e
+      internalID: -248565426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: crystal2
-      rect:
-        serializedVersion: 2
-        x: 609
-        y: 497
-        width: 14
-        height: 13
-      alignment: 9
-      pivot: {x: -0.0051705497, y: -0.0032254732}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57ef3f4c5ffa8c640abc9f9450e80bef
-      internalID: -335179775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: crystal3
+      name: Cave_Trunk2
       rect:
         serializedVersion: 2
         x: 626
-        y: 512
-        width: 13
-        height: 16
+        y: 283
+        width: 28
+        height: 29
       alignment: 9
-      pivot: {x: -0.0032254732, y: 0.0027236938}
+      pivot: {x: 0.0010354178, y: -0.0032674854}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10fb1bdffc877a44aa2c5c36c09e19d0
-      internalID: -1056367300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: crystal4
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 497
-        width: 15
-        height: 13
-      alignment: 9
-      pivot: {x: -0.0068481443, y: -0.0032254732}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35bc9666d65bb4541ab573e4d7801d56
-      internalID: -1973788438
+      spriteID: cf31648dd9231474f94cad15d01912f7
+      internalID: -1206327785
       vertices: []
       indices: 
       edges: []
@@ -199,10 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      crystal2: -335179775
-      crystal1: 360900676
-      crystal3: -1056367300
-      crystal4: -1973788438
+      Cave_Trunk1: -248565426
+      Cave_Trunk2: -1206327785
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
