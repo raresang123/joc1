@@ -15,8 +15,6 @@ public class PropPlacementManager : MonoBehaviour
     [SerializeField, Range(0, 1)]
     private float cornerPropPlacementChance = 0.7f;
 
-    [SerializeField]
-    private GameObject propPrefab;
 
     [SerializeField]
     private GameObject enemyPrefab;
@@ -54,8 +52,13 @@ public class PropPlacementManager : MonoBehaviour
             roomEnemiesCount -= enemiesCount;
             PlaceEnemies(room, enemiesCount);
             }
-            
 
+            //Place inner props
+            List<Prop> innerProps = propsToPlace
+                .Where(x => x.Inner)
+                .OrderByDescending(x => x.PropSize.x * x.PropSize.y)
+                .ToList();
+            PlaceProps(room, innerProps, room.InnerTiles, PlacementOriginCorner.BottomLeft);
 
 
             //Place props place props in the corners
@@ -94,12 +97,9 @@ public class PropPlacementManager : MonoBehaviour
 
             PlaceProps(room, downWallProps, room.NearWallTilesDown, PlacementOriginCorner.BottomLeft);
 
-            //Place inner props
-            List<Prop> innerProps = propsToPlace
-                .Where(x => x.Inner)
-                .OrderByDescending(x => x.PropSize.x * x.PropSize.y)
-                .ToList();
-            PlaceProps(room, innerProps, room.InnerTiles, PlacementOriginCorner.BottomLeft);
+
+
+
         }
 
     }
@@ -308,6 +308,11 @@ public class PropPlacementManager : MonoBehaviour
         room.PropPositions.Add(placementPostion);
         room.PropObjectReferences.Add(prop);
         return prop;
+    }
+
+    private void OnDestroy()
+    {
+        dungeonData.Reset();
     }
 }
 

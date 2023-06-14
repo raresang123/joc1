@@ -759,8 +759,8 @@ TextureImporter:
       name: cWall2
       rect:
         serializedVersion: 2
-        x: 895
-        y: 923
+        x: 897
+        y: 928
         width: 32
         height: 32
       alignment: 0
@@ -797,6 +797,258 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: cWallRight
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a534905f266b268449fea73bfbd8f4f7
+      internalID: -2070424341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cWallBottom
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 864
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b797215cecea3c84b91485f4c69af8a8
+      internalID: -182243582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cWallLeft
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e514c1ae31d4b0040b819dbcd1e4fbbf
+      internalID: -518410256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cWallFull
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 896
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ee2674d665ee44283440c1f1c9aae0
+      internalID: 414267217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cWallTR
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c438bf929857b8e478edea119fa9cac2
+      internalID: -223524441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cWallBR
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 864
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15906f4a8a0742b4ca2dfe1e6ba4fdeb
+      internalID: 1508168655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cWallBL
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 864
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1717425cd699f9f43b9af0790b09720b
+      internalID: 1357373559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cWallTL
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a6d97cc7e344741bb5d0a2c6003c98
+      internalID: 1690888581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cInnerBL
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3172d8c0e704d954fa48ba23353b78d0
+      internalID: -1868354623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cInnerBR
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d005c154272f964f8cd2cbf5b90891a
+      internalID: 864950359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cInnerTR
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12541697f380b8241833b44be66a3a72
+      internalID: -623833215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cInnerTL
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baee7edf7bd00ff4a89a9fa6f2905021
+      internalID: 1652134053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -808,39 +1060,52 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      porumb2: -621374780
+      stalacmite: -208851172
       morcovUrat: -977289182
-      morcovi: -1432227441
       RosieUrata: 905343827
-      dasda: 117024091
-      morcov3: -1023620627
       rosie2: 872416922
       vanata3: 1496939731
-      ardei3: 1805201934
-      vanataUrata: -414595665
-      terrain_atlas_0: 1715930945
-      Rosie: 358149361
+      cWallBottom: -182243582
+      cWallRight: -2070424341
+      cWallTL: 1690888581
+      cWallLeft: -518410256
       morcov2: 1051196617
       vanata: 1666046081
-      vanata1: -960388920
       morcov1: -945493822
       terrain_atlas_1: 259011112
-      ardei1: 685346616
       porumb3: 1765356266
       porumb: -1967563373
       terrain_atlas_2: -1316379568
       ardeiUrat: 1231187048
       vanata2: -973890927
-      aa: 906380666
+      cWallBL: 1357373559
       porumb1: 305762168
       cWall2: 2009558228
-      cave3: 153717868
       ardei2: 399251324
-      ardei: 871436156
       porumbUrat: 568872169
+      cInnerBL: -1868354623
       rosie4: -1356940587
+      porumb2: -621374780
+      morcovi: -1432227441
+      dasda: 117024091
+      cWallFull1: 1859577469
+      morcov3: -1023620627
+      ardei3: 1805201934
+      cInnerBR: 864950359
+      cInnerTR: -623833215
+      vanataUrata: -414595665
+      terrain_atlas_0: 1715930945
+      Rosie: 358149361
+      vanata1: -960388920
+      ardei1: 685346616
+      cWallFull: 414267217
+      cWallBR: 1508168655
+      aa: 906380666
+      cave3: 153717868
+      ardei: 871436156
+      cInnerTL: 1652134053
       rosie1: 2131292438
-      stalacmite: -208851172
+      cWallTR: -223524441
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
