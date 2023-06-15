@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Seed
   stackable: 1
-  icon: {fileID: 643961997, guid: 87987314ce75240429f37102e73c3a40, type: 3}
+  icon: {fileID: 199363287, guid: 121bbcb029cfa4146944eb4ec7e7c1ed, type: 3}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 11400000, guid: 1b9529ec9258ab14796597c507ca2d50, type: 2}
   onItemUsed: {fileID: 11400000, guid: 1b9529ec9258ab14796597c507ca2d50, type: 2}

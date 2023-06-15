@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PropPrefab: {fileID: 2232039824956140797, guid: d4a52cf39f5e4b74eb005b545ba08284, type: 3}
   PropSize: {x: 1, y: 1}
-  Corner: 1
+  Corner: 0
   NearWallUP: 0
   NearWallDown: 0
-  NearWallRight: 1
+  NearWallRight: 0
   NearWallLeft: 0
-  Inner: 0
+  Inner: 1
   PlacementQuantityMin: 70
   PlacementQuantityMax: 90

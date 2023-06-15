@@ -8035,6 +8035,7 @@ MonoBehaviour:
   transitionType: 1
   sceneNameToTransition: Home
   targetPositon: {x: 1.63, y: 3.55, z: 0}
+  camera: {fileID: 0}
 --- !u!4 &1991031687
 Transform:
   m_ObjectHideFlags: 0

@@ -209,6 +209,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Corn
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 391
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6da5afbbfc860645a88d27da5f38a55
+      internalID: 1906539769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -224,6 +245,7 @@ TextureImporter:
       Sapa: -296662650
       Topor: 694879692
       Rosie: 643961997
+      Corn: 1906539769
       Tarnacop: -947843796
   spritePackingTag: 
   pSDRemoveMatte: 0

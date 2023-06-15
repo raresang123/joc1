@@ -40,7 +40,7 @@ public class ItemContainer : ScriptableObject
     internal void Init()
     {
         slots = new List<ItemSlot>();
-        for(int i = 0; i<21; i++)
+        for(int i = 0; i<27; i++)
         {
             slots.Add(new ItemSlot());
         }
