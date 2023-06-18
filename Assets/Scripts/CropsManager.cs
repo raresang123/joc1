@@ -71,10 +71,5 @@ public class CropsManager : MonoBehaviour
             return;
         }
         cropsManager.Plow(position);
-    }
-
-
-
-
-            
+    }       
 }

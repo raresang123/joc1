@@ -25,7 +25,6 @@ public class GameSceneManager : MonoBehaviour
     void Start()
     {
         currentScene = SceneManager.GetActiveScene().name;
-        //caveScene = GetComponent<CorridorDungeonGenerator>();
     }
 
     public void InitSwitchScene(string to, Vector3 targetPosition)
@@ -64,10 +63,6 @@ public class GameSceneManager : MonoBehaviour
         load = SceneManager.LoadSceneAsync(to, LoadSceneMode.Additive);
         unload = SceneManager.UnloadSceneAsync(currentScene);
         currentScene = to;
-        //if (to == "CaveScene")
-        //{
-        //    caveScene.Generate();
-        //}
         MoveCharacter(targetPosition);
     } 
 
@@ -77,11 +72,6 @@ public class GameSceneManager : MonoBehaviour
         CinemachineBrain currentCamera = Camera.main.GetComponent<CinemachineBrain>();
         currentCamera.ActiveVirtualCamera.OnTargetObjectWarped(playerTransform, targetPosition - playerTransform.position);
         playerTransform.position = new Vector3(targetPosition.x, targetPosition.y, playerTransform.position.z);
-
-        //SceneManager.LoadScene(to, LoadSceneMode.Additive);
-        //SceneManager.UnloadSceneAsync(currentScene);
-        //currentScene = to;
-        //GameManager.instance.player.transform.position = targetPosition; 
         if (respawnTransition)
         {
         playerTransform.GetComponent<Character>().FullHeal();
