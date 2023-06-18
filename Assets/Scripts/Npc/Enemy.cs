@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : NpcMovement
 {
-    [SerializeField] Rigidbody2D rb2d;
+    [SerializeField] Rigidbody2D rigidBody2D;
     Transform player;
     [SerializeField] float speed;
     private Vector3 directionVector;
@@ -22,8 +22,8 @@ public class Enemy : MonoBehaviour
         anim = GetComponent<Animator>();
         player = GameManager.instance.player.transform;
         attackTimer = Random.Range(0, timeToAttack);
-        rb2d = GetComponent<Rigidbody2D>();
-        previousPosition = rb2d.position;
+        rigidBody2D = GetComponent<Rigidbody2D>();
+        previousPosition = rigidBody2D.position;
        
     }
 
@@ -38,14 +38,10 @@ public class Enemy : MonoBehaviour
             player.position,
             speed * Time.deltaTime);
         Attack();
-        rb2d.position = Vector3.MoveTowards(
-          rb2d.position, player.position, speed * Time.deltaTime
+        rigidBody2D.position = Vector3.MoveTowards(
+          rigidBody2D.position, player.position, speed * Time.deltaTime
           );
-        UpdateAnimationTame();
-
-       
-
-
+        FollowsCharacter(ref directionVector, rigidBody2D, ref previousPosition, anim);
     }
     private void Attack()
     {
@@ -65,44 +61,5 @@ public class Enemy : MonoBehaviour
             }
         }
         
-    }
-    void UpdateAnimationTame()
-    {
-        Vector2 direction = (rb2d.position - previousPosition).normalized;
-        float x = Mathf.Abs(direction.x);
-        float y = Mathf.Abs(direction.y);
-
-        if (x > y)
-        {
-            if (direction.x > 0)
-            {
-                directionVector = Vector2.right;
-            }
-            else if (direction.x < 0)
-            {
-                directionVector = Vector2.left;
-            }
-        }
-        else
-        {
-            if (direction.y > 0)
-            {
-                directionVector = Vector2.up;
-            }
-            else if (direction.y < 0)
-            {
-                directionVector = Vector2.down;
-            }
-        }
-
-        UpdateAnimation();
-        previousPosition = rb2d.position;
-    }
-
-    void UpdateAnimation()
-    {
-        anim.SetFloat("Horizontal", directionVector.x);
-        anim.SetFloat("Vertical", directionVector.y);
-
     }
 }
