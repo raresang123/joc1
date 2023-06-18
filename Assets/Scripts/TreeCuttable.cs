@@ -2,27 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageObject : ToolHit
+//[RequireComponent(typeof(BoxCollider2D))]
+public class TreeCuttable : ToolHit
 {
+    [SerializeField] GameObject pickUpDrop;
     [SerializeField] int dropCount = 3;
     [SerializeField] float spread = 0.5f;
     [SerializeField] Item item ;
     [SerializeField] int itemCountInOneDrop =1;
     [SerializeField] ResourceNodeType nodeType;
-    [SerializeField] int nrHits = 2;
+    int damageTree = 2;
     public Rigidbody2D enemy;
+    private Transform myTransform;
 
 
 
     private void Start()
     {
         enemy = GetComponent<Rigidbody2D>();
+        myTransform = GetComponent<Transform>();
     }
 
     public override void Hit()
     {
-        if (nrHits == 0)
+        if (damageTree == 0)
         {
+            /*if (nodeType == ResourceNodeType.Enemy)
+            {
+
+                if (enemy)
+                {
+                    Debug.Log("g");
+                    Vector2 direction = (transform.position - enemy.transform.position).normalized;
+                    enemy.AddForce(direction * 16, ForceMode2D.Impulse);
+                }
+            }*/
+
+
             while (dropCount > 0)
             {
                 dropCount -= 1;
@@ -34,7 +50,7 @@ public class DamageObject : ToolHit
             Destroy(gameObject);
 
         }
-        else nrHits--;
+        else damageTree--;
 
     }
     public override bool CanBeHit(List<ResourceNodeType> canBeHit)
