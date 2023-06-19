@@ -37,19 +37,23 @@ public class ToolsCharacterController : MonoBehaviour
         SelectTile();
         CanSelectCheck();
         Marker();
-        if (Input.GetMouseButtonDown(0))
+        if (characterStats.stamina.currVal >= 10)
         {
-            if(UseToolWorld() == true)
-            {
-                return;
-            }
-            UseToolGrid();
+            if (Input.GetMouseButtonDown(0))
+                    {
+                        if(UseToolWorld() == true)
+                        {
+                            return;
+                        }
+                        UseToolGrid();
 
+                    }
+                    else if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        UseUniversalTool();
+                    }
         }
-        else if (Input.GetKeyDown(KeyCode.E))
-        {
-            UseUniversalTool();
-        }
+        
     }
     private void SelectTile()
     {
@@ -84,7 +88,7 @@ public class ToolsCharacterController : MonoBehaviour
 
         if (complete == true)
         {
-            characterStats.GetTired(20);
+            characterStats.GetTired(10);
             if (item.onItemUsed != null)
 
                 item.onItemUsed.OnItemUsed(item, GameManager.instance.inventoryContainer);

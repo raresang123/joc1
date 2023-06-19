@@ -13,9 +13,6 @@ public class DayTimeController : MonoBehaviour
     [SerializeField] AnimationCurve nightTimeCurve;
     [SerializeField] Color dayLightColor = Color.white;
     [SerializeField] float morningTime = 28800f;
-
-
-
     float time;
 
     [SerializeField] float startAtTime = 28800f;
@@ -23,7 +20,6 @@ public class DayTimeController : MonoBehaviour
     [SerializeField] float timeScale = 60f;
     [SerializeField] Light2D globalLight;
     private int days;
-
     List<TimeAgent> agents;
 
     private void Awake()
@@ -102,7 +98,6 @@ public class DayTimeController : MonoBehaviour
     {
         time = 0;
         days += 1;
-
     }
 
     public void SkipTime(float seconds = 0, float minute= 0, float hours = 0)

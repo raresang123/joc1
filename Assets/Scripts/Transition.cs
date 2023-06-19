@@ -14,7 +14,6 @@ public class Transition : MonoBehaviour
     [SerializeField] TransitionType transitionType;
     [SerializeField] string sceneNameToTransition;
     [SerializeField] Vector3 targetPositon;
-    [SerializeField] Camera camera;
     Transform destination;
 
 

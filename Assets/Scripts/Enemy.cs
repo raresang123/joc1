@@ -42,10 +42,6 @@ public class Enemy : MonoBehaviour
           rb2d.position, player.position, speed * Time.deltaTime
           );
         UpdateAnimationTame();
-
-       
-
-
     }
     private void Attack()
     {

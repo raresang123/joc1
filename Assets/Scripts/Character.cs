@@ -18,6 +18,7 @@ public class Stat
     internal void Subtract(int amount )
     {
         currVal -= amount;
+        if (currVal < 0) { currVal = 0; }
     }
     internal void Add(int amount)
     {
@@ -102,10 +103,6 @@ public class Character : MonoBehaviour
     public void GetTired(int amount)
     {
         stamina.Subtract(amount);
-        if(stamina.currVal <0)
-        {
-            isExhausted = true;
-        }
         UpdateStaminaBar();
     }
     public void Rest(int amount)
@@ -118,10 +115,4 @@ public class Character : MonoBehaviour
         stamina.SetToMax();
         UpdateStaminaBar();
     }
-
-    private void Update()
-    {
-        
-    }
-
 }

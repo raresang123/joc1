@@ -12,7 +12,6 @@ public class MarkerManager : MonoBehaviour
   bool show;
 
   private void Update()
-
   {
     if(show == false )
     {

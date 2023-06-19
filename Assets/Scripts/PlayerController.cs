@@ -16,8 +16,6 @@ public class PlayerController : MonoBehaviour
         speed = 3f ;
     
     }
-
-   
     void Update()
     {
        movement.x = Input.GetAxisRaw("Horizontal");
