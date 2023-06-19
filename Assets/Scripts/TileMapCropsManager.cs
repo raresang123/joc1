@@ -98,6 +98,8 @@ public class TileMapCropsManager : TimeAgent
 
      public void VisualizeTile(CropTile cropTile)
     {
+
+           // targetTilemap.SetTile(cropTile.position, cropTile.crop != null ? seeded : plowed);
             targetTilemap.SetTile(cropTile.position,  basee);
 
 
