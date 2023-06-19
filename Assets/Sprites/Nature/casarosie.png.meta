@@ -113,7 +113,7 @@ TextureImporter:
         width: 145
         height: 144
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,6 +121,27 @@ TextureImporter:
       bones: []
       spriteID: 9970ffd0625c0d149a4a798c460b57d2
       internalID: -1392327374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casarosie_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 276
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8380ba2195a37543bfde84a5c39c21d
+      internalID: -1100435561
       vertices: []
       indices: 
       edges: []
@@ -136,6 +157,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      casarosie_1: -1100435561
       casarosie_0: -1392327374
   spritePackingTag: 
   pSDRemoveMatte: 0

@@ -1003,6 +1003,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Grass_City
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 2235
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36920cbac1429994ba27a4ae33070579
+      internalID: -1941697961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_City2
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 2235
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd60083e91c974e4c814d17e1ac0ef63
+      internalID: 501541661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_City
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 2690
+        width: 54
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd99bc1f30e2ec43ae1f9803410d461
+      internalID: -1797746450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fountain_City
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 258
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab67a4aaa28781441bbf217aa9bad99d
+      internalID: -1712911569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sa
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 2136
+        width: 5
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175ff303125dc0e44a5450d944c615ce
+      internalID: -517482644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1014,47 +1119,52 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      water: -370176770
-      Marker: 813300983
-      cave-entrance: -1086077785
-      plowed: -1693344645
-      babyCopacel: 610975585
-      cavefloor2: 1828620706
-      kk: 2045394075
-      cFloor: 1046444398
-      stone3: 1304194287
-      stone-wall: -508760110
-      gardVertical: 855905973
-      Piatra1: 508685802
-      copacRoz: 156476888
-      nature_t_3: -914013816
       cWall: 91436476
+      Marker: 813300983
+      stone3: 1304194287
+      nature_t_5: -1740490748
+      kk: 2045394075
+      gardVertical: 855905973
       nature_t_8: 229897948
+      nature_t_3: -914013816
       GardAlb1: -2055764263
       IarbaBuna: -1453658142
       Buruiana: -2110038361
-      nature_t_6: 207366649
       butoi: -269011297
-      nature_t_0: -573938388
-      pamant: 1629714937
       Log: -1587948741
-      colt: -261936632
-      stone2: -2073628322
+      cave_trunk: -1376032591
       gardOrizontal: 1843267778
       copacUscat: -1792182821
-      grass_cave: -1197143392
-      stone1: -1232798668
       iarbaMica: 560336817
-      cavefloor: 62399171
-      cave_trunk: -1376032591
+      sa: -517482644
+      Fountain_City: -1712911569
+      Tree_City: -1797746450
       PiatraMica: 1732468502
       GardAlb: 954401685
       nature_t_4: 1150538332
       babyCopace: -251272672
-      caveWall2: 1932136860
       nature_t_2: -2013567022
       nature_t_1: -1741393091
-      nature_t_5: -1740490748
+      water: -370176770
+      cave-entrance: -1086077785
+      plowed: -1693344645
+      babyCopacel: 610975585
+      cavefloor2: 1828620706
+      cFloor: 1046444398
+      stone-wall: -508760110
+      Piatra1: 508685802
+      copacRoz: 156476888
+      nature_t_6: 207366649
+      nature_t_0: -573938388
+      pamant: 1629714937
+      stone2: -2073628322
+      colt: -261936632
+      grass_cave: -1197143392
+      stone1: -1232798668
+      cavefloor: 62399171
+      Grass_City: -1941697961
+      caveWall2: 1932136860
+      Grass_City2: 501541661
       Grass2: -2110929390
   spritePackingTag: 
   pSDRemoveMatte: 0
