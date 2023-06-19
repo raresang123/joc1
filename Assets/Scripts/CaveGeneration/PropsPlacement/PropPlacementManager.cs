@@ -39,6 +39,27 @@ public class PropPlacementManager : MonoBehaviour
         }
     }
 
+    private void PlaceInnerProps(Room room, List<Prop> props, HashSet<Vector2Int> availableTiles, PlacementOriginCorner placement)
+    {
+        foreach (Prop propToPlace in props)
+        {
+            //We want to place only certain quantity of each prop
+            int quantity = UnityEngine.Random.Range(propToPlace.PlacementQuantityMin, propToPlace.PlacementQuantityMax + 1);
+
+            for (int i = 0; i < quantity; i++)
+            {
+                try
+                {
+                var aux = UnityEngine.Random.Range(0, room.InnerTiles.Count);
+                PlacePropGameObjectAt(room, room.InnerTiles.ElementAt(aux), propToPlace);
+                room.InnerTiles.Remove(room.InnerTiles.ElementAt(aux));
+                }
+                catch(Exception x) { }
+                
+            }
+
+        }
+    }
 
     public void ProcessRooms()
     {
@@ -53,84 +74,57 @@ public class PropPlacementManager : MonoBehaviour
             PlaceEnemies(room, enemiesCount);
             }
 
-            //Place inner props
-            List<Prop> innerProps = propsToPlace
-                .Where(x => x.Inner)
-                .OrderByDescending(x => x.PropSize.x * x.PropSize.y)
-                .ToList();
-            PlaceProps(room, innerProps, room.InnerTiles, PlacementOriginCorner.BottomLeft);
-
-
             //Place props place props in the corners
             List<Prop> cornerProps = propsToPlace.Where(x => x.Corner).ToList();
             PlaceCornerProps(room, cornerProps);
 
             //Place props near LEFT wall
-            List<Prop> leftWallProps = propsToPlace
-            .Where(x => x.NearWallLeft)
-            .OrderByDescending(x => x.PropSize.x * x.PropSize.y)
-            .ToList();
-
-            PlaceProps(room, leftWallProps, room.NearWallTilesLeft, PlacementOriginCorner.BottomLeft);
+            List<Prop> leftWallProps = propsToPlace.Where(x => x.NearWallLeft).ToList();
+            PlaceProps(room, leftWallProps, room.NearWallTilesLeft, PlacementOriginCorner.Left);
 
             //Place props near RIGHT wall
-            List<Prop> rightWallProps = propsToPlace
-            .Where(x => x.NearWallRight)
-            .OrderByDescending(x => x.PropSize.x * x.PropSize.y)
-            .ToList();
-
-            PlaceProps(room, rightWallProps, room.NearWallTilesRight, PlacementOriginCorner.TopRight);
+            List<Prop> rightWallProps = propsToPlace.Where(x => x.NearWallRight).ToList();
+            PlaceProps(room, rightWallProps, room.NearWallTilesRight, PlacementOriginCorner.Right);
 
             //Place props near UP wall
-            List<Prop> topWallProps = propsToPlace
-            .Where(x => x.NearWallUP)
-            .OrderByDescending(x => x.PropSize.x * x.PropSize.y)
-            .ToList();
-
-            PlaceProps(room, topWallProps, room.NearWallTilesUp, PlacementOriginCorner.TopLeft);
+            List<Prop> topWallProps = propsToPlace.Where(x => x.NearWallUP).ToList();
+            PlaceProps(room, topWallProps, room.NearWallTilesUp, PlacementOriginCorner.Top);
 
             //Place props near DOWN wall
-            List<Prop> downWallProps = propsToPlace
-            .Where(x => x.NearWallDown)
-            .OrderByDescending(x => x.PropSize.x * x.PropSize.y)
-            .ToList();
+            List<Prop> downWallProps = propsToPlace.Where(x => x.NearWallDown).ToList();           
+            //.OrderByDescending(x => x.PropSize.x * x.PropSize.y)
+             PlaceProps(room, downWallProps, room.NearWallTilesDown, PlacementOriginCorner.Bottom);
 
-            PlaceProps(room, downWallProps, room.NearWallTilesDown, PlacementOriginCorner.BottomLeft);
-
-
-
-
+            //Place inner props
+            List<Prop> innerProps = propsToPlace.Where(x => x.Inner).ToList();
+            PlaceInnerProps(room, innerProps, room.InnerTiles, PlacementOriginCorner.Inner);
         }
 
     }
 
-    /// <summary>
-    /// Places props near walls. We need to specify the props anw the placement start point
-    /// </summary>
     /// <param name="room"></param>
     /// <param name="wallProps">Props that we should try to place</param>
     /// <param name="availableTiles">Tiles that are near the specific wall</param>
     /// <param name="placement">How to place bigger props. Ex near top wall we want to start placemt from the Top corner and find if there are free spaces below</param>
-    private void PlaceProps(
-        Room room, List<Prop> wallProps, HashSet<Vector2Int> availableTiles, PlacementOriginCorner placement)
+    private void PlaceProps(Room room, List<Prop> props, HashSet<Vector2Int> availableTiles, PlacementOriginCorner placement)
     {
         //Remove path positions from the initial nearWallTiles to ensure the clear path to traverse dungeon
         HashSet<Vector2Int> tempPositons = new HashSet<Vector2Int>(availableTiles);
+
         tempPositons.ExceptWith(dungeonData.Path);
 
         //We will try to place all the props
-        foreach (Prop propToPlace in wallProps)
+        foreach (Prop propToPlace in props)
         {
             //We want to place only certain quantity of each prop
-            int quantity
-                = UnityEngine.Random.Range(propToPlace.PlacementQuantityMin, propToPlace.PlacementQuantityMax + 1);
+            int quantity= UnityEngine.Random.Range(propToPlace.PlacementQuantityMin, propToPlace.PlacementQuantityMax + 1);
 
             for (int i = 0; i < quantity; i++)
             {
                 //remove taken positions
                 tempPositons.ExceptWith(room.PropPositions);
                 //shuffel the positions
-                List<Vector2Int> availablePositions = tempPositons.OrderBy(x => Guid.NewGuid()).ToList();
+                List<Vector2Int> availablePositions = tempPositons.ToList();
                 //If placement has failed there is no point in trying to place the same prop again
                 if (TryPlacingPropBruteForce(room, propToPlace, availablePositions, placement) == false)
                     break;
@@ -147,8 +141,7 @@ public class PropPlacementManager : MonoBehaviour
     /// <param name="availablePositions"></param>
     /// <param name="placement"></param>
     /// <returns>False if there is no space. True if placement was successful</returns>
-    private bool TryPlacingPropBruteForce(
-        Room room, Prop propToPlace, List<Vector2Int> availablePositions, PlacementOriginCorner placement)
+    private bool TryPlacingPropBruteForce( Room room, Prop propToPlace, List<Vector2Int> availablePositions, PlacementOriginCorner placement)
     {
         //try placing the objects starting from the corner specified by the placement parameter
         for (int i = 0; i < availablePositions.Count; i++)
@@ -197,7 +190,7 @@ public class PropPlacementManager : MonoBehaviour
         List<Vector2Int> freePositions = new();
 
         //Perform the specific loop depending on the PlacementOriginCorner
-        if (placement == PlacementOriginCorner.BottomLeft)
+        if (placement == PlacementOriginCorner.Left)
         {
             for (int xOffset = 0; xOffset < prop.PropSize.x; xOffset++)
             {
@@ -209,7 +202,7 @@ public class PropPlacementManager : MonoBehaviour
                 }
             }
         }
-        else if (placement == PlacementOriginCorner.BottomRight)
+        else if (placement == PlacementOriginCorner.Right)
         {
             for (int xOffset = -prop.PropSize.x + 1; xOffset <= 0; xOffset++)
             {
@@ -221,7 +214,7 @@ public class PropPlacementManager : MonoBehaviour
                 }
             }
         }
-        else if (placement == PlacementOriginCorner.TopLeft)
+        else if (placement == PlacementOriginCorner.Top)
         {
             for (int xOffset = 0; xOffset < prop.PropSize.x; xOffset++)
             {
@@ -239,7 +232,10 @@ public class PropPlacementManager : MonoBehaviour
             {
                 for (int yOffset = -prop.PropSize.y + 1; yOffset <= 0; yOffset++)
                 {
-                    Vector2Int tempPos = originPosition + new Vector2Int(xOffset, yOffset);
+                    var aux = UnityEngine.Random.Range(0, availablePositions.Count);
+
+
+                    Vector2Int tempPos = originPosition + availablePositions.ElementAt(aux);
                     if (availablePositions.Contains(tempPos))
                         freePositions.Add(tempPos);
                 }
@@ -291,16 +287,16 @@ public class PropPlacementManager : MonoBehaviour
         //propSpriteRenderer.sprite = propToPlace.PropSprite;
 
         //Add a collider
-        CapsuleCollider2D collider
-            = prop.gameObject.AddComponent<CapsuleCollider2D>();
-        collider.offset = Vector2.zero;
-        if (propToPlace.PropSize.x > propToPlace.PropSize.y)
-        {
-            collider.direction = CapsuleDirection2D.Horizontal;
-        }
-        Vector2 size
-            = new Vector2(propToPlace.PropSize.x * 0.8f, propToPlace.PropSize.y * 0.8f);
-        collider.size = size;
+        //CapsuleCollider2D collider
+        //    = prop.gameObject.AddComponent<CapsuleCollider2D>();
+        //collider.offset = Vector2.zero;
+        //if (propToPlace.PropSize.x > propToPlace.PropSize.y)
+        //{
+        //    collider.direction = CapsuleDirection2D.Horizontal;
+        //}
+        //Vector2 size
+        //    = new Vector2(propToPlace.PropSize.x * 0.8f, propToPlace.PropSize.y * 0.8f);
+        //collider.size = size;
 
         prop.transform.localPosition = (Vector2)placementPostion;
 
@@ -322,8 +318,9 @@ public class PropPlacementManager : MonoBehaviour
 /// </summary>
 public enum PlacementOriginCorner
 {
-    BottomLeft,
-    BottomRight,
-    TopLeft,
-    TopRight
+    Bottom,
+    Left,
+    Top,
+    Right,
+    Inner
 }

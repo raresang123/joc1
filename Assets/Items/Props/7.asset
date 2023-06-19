@@ -19,6 +19,6 @@ MonoBehaviour:
   NearWallDown: 1
   NearWallRight: 1
   NearWallLeft: 1
-  Inner: 1
-  PlacementQuantityMin: 70
-  PlacementQuantityMax: 90
+  Inner: 0
+  PlacementQuantityMin: 2
+  PlacementQuantityMax: 4

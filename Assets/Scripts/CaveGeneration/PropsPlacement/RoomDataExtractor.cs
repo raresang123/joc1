@@ -18,9 +18,11 @@ public class RoomDataExtractor : MonoBehaviour
     {
         if (dungeonData == null)
             return;
+        dungeonData.Path.ExceptWith(dungeonData.PathCorridor);
 
         foreach (Room room in dungeonData.Rooms)
         {
+            room.FloorTiles.ExceptWith(dungeonData.PathCorridor);
             //find corener, near wall and inner tiles
             foreach (Vector2Int tilePosition in room.FloorTiles)
             {

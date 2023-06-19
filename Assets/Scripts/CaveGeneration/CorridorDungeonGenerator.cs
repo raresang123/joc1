@@ -84,6 +84,8 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
             {
                 var room = RunRandomWalk(randomWalkParameters, position);
                 roomFloors.UnionWith(room);
+                dungeonData.Rooms.Add(new Room(position, room));
+                dungeonData.Path.UnionWith(room);
             }
         }
     }
@@ -121,7 +123,6 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
 
             dungeonData.Rooms.Add(new Room(roomPosition, roomFloor));
             dungeonData.Path.UnionWith(roomFloor);
-
         }
         return roomPositions;
     }
@@ -139,6 +140,7 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
             currentPosition = corridor[corridor.Count - 1];
             potentialRoomPositions.Add(currentPosition);
             floorPositions.UnionWith(corridor);
+            dungeonData.PathCorridor.UnionWith(corridor);
         }
         return corridors;
     }

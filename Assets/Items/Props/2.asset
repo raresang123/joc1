@@ -20,5 +20,5 @@ MonoBehaviour:
   NearWallRight: 0
   NearWallLeft: 0
   Inner: 1
-  PlacementQuantityMin: 70
-  PlacementQuantityMax: 90
+  PlacementQuantityMin: 3
+  PlacementQuantityMax: 7

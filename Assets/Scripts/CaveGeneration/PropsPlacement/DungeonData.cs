@@ -11,6 +11,7 @@ public class DungeonData : MonoBehaviour
 {
     public List<Room> Rooms { get; set; } = new List<Room>();
     public HashSet<Vector2Int> Path { get; set; } = new HashSet<Vector2Int>();
+    public HashSet<Vector2Int> PathCorridor { get; set; } = new HashSet<Vector2Int>();
 
     public void Reset()
     {
@@ -27,6 +28,7 @@ public class DungeonData : MonoBehaviour
         }
         Rooms = new();
         Path = new();
+        PathCorridor = new();
     }
 
     public IEnumerator TutorialCoroutine(Action code)
@@ -50,7 +52,6 @@ public class Room
     public HashSet<Vector2Int> NearWallTilesLeft { get; set; } = new HashSet<Vector2Int>();
     public HashSet<Vector2Int> NearWallTilesRight { get; set; } = new HashSet<Vector2Int>();
     public HashSet<Vector2Int> CornerTiles { get; set; } = new HashSet<Vector2Int>();
-
     public HashSet<Vector2Int> InnerTiles { get; set; } = new HashSet<Vector2Int>();
 
     public HashSet<Vector2Int> PropPositions { get; set; } = new HashSet<Vector2Int>();
