@@ -48,12 +48,13 @@ public class ToolsCharacterController : MonoBehaviour
                         UseToolGrid();
 
                     }
-                    else if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        UseUniversalTool();
-                    }
+                     
         }
-        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            UseUniversalTool();
+        }
+
     }
     private void SelectTile()
     {
