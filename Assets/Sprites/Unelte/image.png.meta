@@ -113,7 +113,7 @@ TextureImporter:
         width: 12
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,6 +121,48 @@ TextureImporter:
       bones: []
       spriteID: 7e2afedfc5b146842930d429242bdc6c
       internalID: 199363287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corn_seed
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 3
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90b75a817417f24b9c0720ad90870ad
+      internalID: 155703114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carrot_Seed
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 45
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8d70f9491714d4daad81db9107014c
+      internalID: -1499394192
       vertices: []
       indices: 
       edges: []
@@ -137,6 +179,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Tomato_Seed: 199363287
+      Carrot_Seed: -1499394192
+      Corn_seed: 155703114
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

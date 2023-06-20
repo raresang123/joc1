@@ -16,6 +16,7 @@ public class ItemToolbarPanel : ItemPanel
         toolbarController.Set(id);
    
         Highlight(id);
+
     }
     int currentSelectedTool;
 

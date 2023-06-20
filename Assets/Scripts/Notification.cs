@@ -11,20 +11,21 @@ public class Notification : MonoBehaviour
     GameObject currentTarget;
    public bool playerInRange;
 
-    private void Start()
-    {
-      //  notification = GetComponent<GameObject>();
-    }
+   
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerInRange)
-         
+        if (playerInRange)
         {
-
+            if (notification.activeInHierarchy)
+            {
                 notification.SetActive(false);
+            }
+            else
+            {
+                notification.SetActive(true);
+            }
         }
-           
     }
 
     //public void NotificationFunction(GameObject target)
@@ -67,6 +68,8 @@ public class Notification : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange =false;
+            notification.SetActive(false);
+
         }
     }
 }
