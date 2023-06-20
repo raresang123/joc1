@@ -7,7 +7,7 @@ using UnityEngine;
 /// Stores all the data about our dungeon.
 /// Useful when creating a save / load system
 /// </summary>
-public class DungeonData : MonoBehaviour
+public class CaveData : MonoBehaviour
 {
     public List<Room> Rooms { get; set; } = new List<Room>();
     public HashSet<Vector2Int> Path { get; set; } = new HashSet<Vector2Int>();
@@ -56,8 +56,6 @@ public class Room
 
     public HashSet<Vector2Int> PropPositions { get; set; } = new HashSet<Vector2Int>();
     public List<GameObject> PropObjectReferences { get; set; } = new List<GameObject>();
-
-    public List<Vector2Int> PositionsAccessibleFromPath { get; set; } = new List<Vector2Int>();
 
     public List<GameObject> EnemiesInTheRoom { get; set; } = new List<GameObject>();
 

@@ -6,23 +6,23 @@ using UnityEngine.Events;
 
 public class RoomDataExtractor : MonoBehaviour
 {
-    private DungeonData dungeonData;
+    private CaveData caveData;
 
     public UnityEvent OnFinishedRoomProcessing;
 
     private void Awake()
     {
-        dungeonData = FindObjectOfType<DungeonData>();
+        caveData = FindObjectOfType<CaveData>();
     }
     public void ProcessRooms()
     {
-        if (dungeonData == null)
+        if (caveData == null)
             return;
-        dungeonData.Path.ExceptWith(dungeonData.PathCorridor);
+        caveData.Path.ExceptWith(caveData.PathCorridor);
 
-        foreach (Room room in dungeonData.Rooms)
+        foreach (Room room in caveData.Rooms)
         {
-            room.FloorTiles.ExceptWith(dungeonData.PathCorridor);
+            room.FloorTiles.ExceptWith(caveData.PathCorridor);
             //find corener, near wall and inner tiles
             foreach (Vector2Int tilePosition in room.FloorTiles)
             {
