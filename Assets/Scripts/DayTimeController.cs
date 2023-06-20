@@ -28,6 +28,11 @@ public class DayTimeController : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        time = startAtTime;
+    }
+
 
     public void Subscribe(TimeAgent timeAgent)
     {

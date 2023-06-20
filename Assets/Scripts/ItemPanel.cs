@@ -10,6 +10,7 @@ public class ItemPanel : MonoBehaviour
      private void Start() 
     {
         Init();
+        
     }
 
     public void Init()
@@ -22,6 +23,7 @@ public class ItemPanel : MonoBehaviour
     {
         Show(); 
     }
+        
 
     private void LateUpdate()
     {
