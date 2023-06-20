@@ -11,7 +11,7 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
     [SerializeField]
     [Range(0.1f, 1)]
     private float roomPercent = 0.8f;
-    private DungeonData dungeonData;
+    private CaveData caveData;
 
 
     public void Generate()
@@ -21,15 +21,15 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
 
     protected override void RunProceduralGeneration()
     {
-        dungeonData = FindObjectOfType<DungeonData>();
-        if (dungeonData == null)
-            dungeonData = gameObject.AddComponent<DungeonData>();
+        caveData = FindObjectOfType<CaveData>();
+        if (caveData == null)
+            caveData = gameObject.AddComponent<CaveData>();
         CorridorFirstGeneration();
     }
 
     private void CorridorFirstGeneration()
     {
-        dungeonData.Reset();
+        caveData.Reset();
 
 
 
@@ -84,8 +84,8 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
             {
                 var room = RunRandomWalk(randomWalkParameters, position);
                 roomFloors.UnionWith(room);
-                dungeonData.Rooms.Add(new Room(position, room));
-                dungeonData.Path.UnionWith(room);
+                caveData.Rooms.Add(new Room(position, room));
+                caveData.Path.UnionWith(room);
             }
         }
     }
@@ -121,8 +121,8 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
             roomPositions.UnionWith(roomFloor);
 
 
-            dungeonData.Rooms.Add(new Room(roomPosition, roomFloor));
-            dungeonData.Path.UnionWith(roomFloor);
+            caveData.Rooms.Add(new Room(roomPosition, roomFloor));
+            caveData.Path.UnionWith(roomFloor);
         }
         return roomPositions;
     }
@@ -140,7 +140,7 @@ public class CorridorDungeonGenerator : SimpleRandomWalkDungeonGenerator
             currentPosition = corridor[corridor.Count - 1];
             potentialRoomPositions.Add(currentPosition);
             floorPositions.UnionWith(corridor);
-            dungeonData.PathCorridor.UnionWith(corridor);
+            caveData.PathCorridor.UnionWith(corridor);
         }
         return corridors;
     }
