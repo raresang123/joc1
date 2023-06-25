@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   PropPrefab: {fileID: 2232039824956140797, guid: a4573ad92e8903e44a380166b20a3804, type: 3}
-  PropSize: {x: 1, y: 1}
+  PropSize: {x: 2, y: 2}
   Corner: 0
   NearWallUP: 0
   NearWallDown: 0

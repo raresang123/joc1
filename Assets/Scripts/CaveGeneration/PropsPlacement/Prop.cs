@@ -7,9 +7,6 @@ public class Prop : ScriptableObject
 {
     [Header("Prop data:")]
     public GameObject PropPrefab;
-
-    public Vector2Int PropSize = Vector2Int.one;
-
     [Space, Header("Placement type:")]
     public bool Corner = true;
     public bool NearWallUP = true;

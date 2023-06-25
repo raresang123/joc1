@@ -15,7 +15,7 @@ public class NpcController : Interactable
     private int currentDirection;
     [SerializeField] float maxDistance = 1.5f;
     private bool selectable;
-    private bool tame=false;
+    public bool tame=false;
     private Vector2 previousPosition;
    
 

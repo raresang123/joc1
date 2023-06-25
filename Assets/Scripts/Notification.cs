@@ -2,24 +2,50 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-
-using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Notification : MonoBehaviour
 {
     [SerializeField] GameObject notification;
-    GameObject currentTarget;
-   public bool playerInRange;
+    public Transform character;
+    NpcController dog;
 
-   
+    private void Start()
+    {
+      
+    
+        dog = GetComponent<NpcController>();
+        character = GameManager.instance.player.transform;
+    }
 
     private void Update()
     {
-        if (playerInRange)
+        float distance = Vector3.Distance(transform.position, character.position);
+        if (distance > 2f)
         {
-            if (notification.activeInHierarchy)
+            notification.SetActive(false);
+        }
+        else
+        {
+
+            if (CompareTag("npc"))
             {
-                notification.SetActive(false);
+                if (dog.tame == false)
+                {
+                    notification.SetActive(true);
+                }
+            }
+            else
+            {
+                notification.SetActive(true);
+            }
+
+            if (CompareTag("crystal"))
+            {
+                
+                {
+                    notification.SetActive(true);
+                }
             }
             else
             {
@@ -27,49 +53,5 @@ public class Notification : MonoBehaviour
             }
         }
     }
-
-    //public void NotificationFunction(GameObject target)
-    //{
-    //    if(currentTarget = target)
-    //    {
-    //        currentTarget = target;
-    //        Vector3 position = target.transform.position;
-    //        NotificationFunction(position);
-    //    }
-
-    //}
-
-    //public void NotificationFunction(Vector3 position)
-    //{
-    //    notification.SetActive(true);
-
-
-    //    notification.transform.position = position;
-    //}
-    //public void NotificationFunctionof()
-    //{
-    //    currentTarget = null;
-    //    notification.SetActive(false);
-
-
-
-    //}
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            playerInRange = true;
-            
-
-        }
-    }
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerInRange =false;
-            notification.SetActive(false);
-
-        }
-    }
+      
 }

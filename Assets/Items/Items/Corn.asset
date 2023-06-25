@@ -18,7 +18,7 @@ MonoBehaviour:
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}
-  onStatsUsed: {fileID: 0}
+  onStatsUsed: {fileID: 11400000, guid: 76486a2f51eb4984d890310d461beed2, type: 2}
   onCombat: {fileID: 0}
   crop: {fileID: 0}
   itemPrefab: {fileID: 0}

@@ -52,7 +52,14 @@ public class ToolsCharacterController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            UseUniversalTool();
+            if (UseUniversalTool() == true)
+            {
+                return;
+            }
+            if (UseToolWorld() == true)
+            {
+                return;
+            }
         }
 
     }
@@ -121,7 +128,7 @@ public class ToolsCharacterController : MonoBehaviour
         }
     }
 
-    private void UseUniversalTool()
+    private bool UseUniversalTool()
     {
             Item item = toolbarController.GetItem;
             if (item)
@@ -129,9 +136,10 @@ public class ToolsCharacterController : MonoBehaviour
                 if (item.onStatsUsed != null)
                     {
                         item.onStatsUsed.OnItemUsed(item, GameManager.instance.inventoryContainer, characterStats);
-                        return;
+                        return true;
                     }    
             }
+        return false;
     }
 
     void PickUpTile()
