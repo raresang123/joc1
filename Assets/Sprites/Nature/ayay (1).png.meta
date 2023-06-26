@@ -134,7 +134,7 @@ TextureImporter:
         width: 186
         height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,6 +142,27 @@ TextureImporter:
       bones: []
       spriteID: 5dbbcd59356329d47a59cafba75e2049
       internalID: -961197725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: house4
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 0
+        width: 451
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30ab755a55353841b8ed215f8e8ac51
+      internalID: 1301369631
       vertices: []
       indices: 
       edges: []
@@ -157,6 +178,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      house4: 1301369631
       barnroz: -156871076
       adda: -961197725
   spritePackingTag: 

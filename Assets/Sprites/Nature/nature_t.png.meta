@@ -1109,6 +1109,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< Updated upstream
       name: nature_t_7
       rect:
         serializedVersion: 2
@@ -1118,24 +1119,70 @@ TextureImporter:
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+      name: newTree
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 2690
+        width: 55
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: 3230ca5eb70737246a5558a6111de511
       internalID: 1480134579
+=======
+      spriteID: d9a660c772b395d44b58ea774790eba6
+      internalID: -960699458
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< Updated upstream
       name: CaveExit
       rect:
         serializedVersion: 2
         x: 576
         y: 1970
         width: 48
+=======
+      name: flower
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 1700
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d3f2b60555acf47ab259c9aaa941da
+      internalID: 1517249249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newCityFloor
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1554
+        width: 32
+>>>>>>> Stashed changes
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1144,8 +1191,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< Updated upstream
       spriteID: 304482d8b442ad948befff97c27fa1f0
       internalID: -574860456
+=======
+      spriteID: 6e2b0365e66d5d048a031fe40c7f7bc9
+      internalID: -632166008
+>>>>>>> Stashed changes
       vertices: []
       indices: 
       edges: []
@@ -1165,10 +1217,15 @@ TextureImporter:
       Marker: 813300983
       Grass2: -2110929390
       Grass_City2: 501541661
+<<<<<<< Updated upstream
+=======
+      newTree: -960699458
+>>>>>>> Stashed changes
       kk: 2045394075
       gardVertical: 855905973
       nature_t_8: 229897948
       nature_t_3: -914013816
+      newCityFloor: -632166008
       GardAlb1: -2055764263
       IarbaBuna: -1453658142
       Buruiana: -2110038361
@@ -1204,10 +1261,14 @@ TextureImporter:
       colt: -261936632
       grass_cave: -1197143392
       stone1: -1232798668
+      flower: 1517249249
       cavefloor: 62399171
       Grass_City: -1941697961
       caveWall2: 1932136860
+<<<<<<< Updated upstream
       CaveExit: -574860456
+=======
+>>>>>>> Stashed changes
       nature_t_5: -1740490748
       stone3: 1304194287
   spritePackingTag: 

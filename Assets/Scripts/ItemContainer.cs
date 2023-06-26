@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 
@@ -36,7 +37,7 @@ public class ItemContainer : ScriptableObject
 {
     public List<ItemSlot> slots;
     public bool isUpdated;
-
+   
     internal void Init()
     {
         slots = new List<ItemSlot>();
@@ -100,7 +101,10 @@ public class ItemContainer : ScriptableObject
                 itemSlot.Clear();
             }
         }
+        
+    }
+    
     }
 
- 
-}
+
+
