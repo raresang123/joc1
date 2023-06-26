@@ -48,7 +48,14 @@ public class InventoryDragAndDrop1 : MonoBehaviour
          this.itemSlot.Copy(itemSlot);
          itemSlot.Clear();
       }
-      else
+        else if(this.itemSlot.item == itemSlot.item && itemSlot.item.stackable==true)
+        {
+            
+            //this.itemSlot.Set(itemSlot.item, this.itemSlot.count + itemSlot.count);
+            itemSlot.Set(itemSlot.item, this.itemSlot.count + itemSlot.count);
+            this.itemSlot.Clear();
+        }
+        else
       {
          Item item = itemSlot.item;
          int count = itemSlot.count;
