@@ -20451,7 +20451,7 @@ MonoBehaviour:
   propsToPlace:
   - {fileID: 11400000, guid: 293adfbb305ead54fabd5c696bdd46ad, type: 2}
   - {fileID: 11400000, guid: 97f2886f5ae528142abeffa54d6f32ab, type: 2}
-  - {fileID: 11400000, guid: b142f5a677bde174998d79723c0fa4e9, type: 2}
+  - {fileID: 11400000, guid: 362eb8e64f09b2b478c402e8948b41f4, type: 2}
   - {fileID: 11400000, guid: 721eef4307909ff4d879be7180d6d513, type: 2}
   - {fileID: 11400000, guid: 7a523877fbb3b374dafa37a10752133b, type: 2}
   - {fileID: 11400000, guid: 1e325a8fde4d23345b55ca02a34aeb73, type: 2}
@@ -20459,6 +20459,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7572d7ca09a17064d8cf53dc2a59f9c6, type: 2}
   - {fileID: 11400000, guid: 77ffe52bd18f7a440b11a35c03445d21, type: 2}
   - {fileID: 11400000, guid: 6fb68bf942836f54f91ccebc3728af13, type: 2}
+  - {fileID: 11400000, guid: 584f8ca33e34c3341af7fd95b36659a8, type: 2}
   cornerPropPlacementChance: 0.712
   enemyPrefab: {fileID: 866930423479775793, guid: 4cd25cbe2ad819f48a6690e0af4855e2, type: 3}
   roomEnemiesCount: 7

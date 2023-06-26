@@ -56,10 +56,6 @@ public class ToolsCharacterController : MonoBehaviour
             {
                 return;
             }
-            if (UseToolWorld() == true)
-            {
-                return;
-            }
         }
 
     }
