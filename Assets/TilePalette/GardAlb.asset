@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: GardAlb
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 954401685, guid: 687cd345573be4d4db8f0e9ab5b5f091, type: 3}
+  m_Sprite: {fileID: 2495903465851848054, guid: 687cd345573be4d4db8f0e9ab5b5f091, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

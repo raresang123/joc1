@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: terrain_atlas_354
+  m_Name: tree
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 773058772, guid: ec038d93d4a17ab43870539d95621201, type: 3}
+  m_Sprite: {fileID: -47963485709598973, guid: 687cd345573be4d4db8f0e9ab5b5f091, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
