@@ -104,7 +104,6 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: a4d8ef55b47af6946b894e72feab700b, type: 2}
   itemCountInOneDrop: 1
   nodeType: 1
-  damageTree: 2
   enemy: {fileID: 0}
 --- !u!61 &3138031432013015594
 BoxCollider2D:
@@ -119,10 +118,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.28863358, y: 0.31082368}
+  m_Offset: {x: 0.44840917, y: 0.31082368}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: -0.0019463433, y: 0.0015153557}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.5625, y: 0.90625}
     newSize: {x: 1.21875, y: 2.96875}
     adaptiveTilingThreshold: 0.5
@@ -130,5 +129,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.47738624, y: 0.40512753}
+  m_Size: {x: 0.3930735, y: 0.40512753}
   m_EdgeRadius: 0

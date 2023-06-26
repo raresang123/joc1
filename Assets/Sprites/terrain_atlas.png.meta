@@ -1058,7 +1058,7 @@ TextureImporter:
         width: 24
         height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1066,48 +1066,6 @@ TextureImporter:
       bones: []
       spriteID: e67be0b16c465a04d88b1ec809524e70
       internalID: -1930476055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CaveExit
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 832
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bbb088f4f320be46b68fe7f21d33b67
-      internalID: 1523024008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NextCave
-      rect:
-        serializedVersion: 2
-        x: 529
-        y: 784
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 074a9ec7da880e043aae52524c00eb26
-      internalID: 630446678
       vertices: []
       indices: 
       edges: []
@@ -1155,7 +1113,6 @@ TextureImporter:
       cWallFull1: 1859577469
       morcov3: -1023620627
       ardei3: 1805201934
-      NextCave: 630446678
       cInnerBR: 864950359
       cInnerTR: -623833215
       vanataUrata: -414595665
@@ -1170,7 +1127,6 @@ TextureImporter:
       ardei: 871436156
       cInnerTL: 1652134053
       rosie1: 2131292438
-      CaveExit: 1523024008
       cWallTR: -223524441
   spritePackingTag: 
   pSDRemoveMatte: 0

@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fd26aa5558dec643b4be646ff2183c9, type: 3}
-  m_Name: CrystalVerde
+  m_Name: 8
   m_EditorClassIdentifier: 
   PropPrefab: {fileID: 2232039824956140797, guid: f0ce530742f10f94496e8da2297c02b8, type: 3}
-  Corner: 0
-  NearWallUP: 0
-  NearWallDown: 0
-  NearWallRight: 0
-  NearWallLeft: 0
-  Inner: 1
-  PlacementQuantityMin: 1
-  PlacementQuantityMax: 1
+  PropSize: {x: 1, y: 1}
+  Corner: 1
+  NearWallUP: 1
+  NearWallDown: 1
+  NearWallRight: 1
+  NearWallLeft: 1
+  Inner: 0
+  PlacementQuantityMin: 3
+  PlacementQuantityMax: 6

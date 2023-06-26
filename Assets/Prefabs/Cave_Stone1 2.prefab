@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2232039824956140738}
   - component: {fileID: 2232039824956140739}
   - component: {fileID: 2232039824956140796}
-  - component: {fileID: 8123840986108392222}
+  - component: {fileID: 4834679173891693724}
   m_Layer: 0
-  m_Name: Cave_Crystal
+  m_Name: Cave_Stone1 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 187435901
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1973788438, guid: f2cb709aaceaede429dd86e73a166198, type: 3}
+  m_Sprite: {fileID: -2073628322, guid: 687cd345573be4d4db8f0e9ab5b5f091, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   itemCountInOneDrop: 1
   nodeType: 2
   enemy: {fileID: 0}
---- !u!61 &8123840986108392222
+--- !u!61 &4834679173891693724
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,16 +118,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.22211945, y: 0.27699256}
+  m_Offset: {x: 0.22157753, y: 0.1875034}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.46875, y: 0.40625}
+    pivot: {x: -0.0041155135, y: 0.0013997395}
+    oldSize: {x: 0.4375, y: 0.46875}
     newSize: {x: 0.9375, y: 0.78125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.37788463, y: 0.30068493}
+  m_Size: {x: 0.37793326, y: 0.21199739}
   m_EdgeRadius: 0

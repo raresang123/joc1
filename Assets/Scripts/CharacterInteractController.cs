@@ -25,7 +25,6 @@ public class CharacterInteractController : MonoBehaviour
         {
             Interact();
         }
-
     }
 
    
@@ -49,4 +48,23 @@ public class CharacterInteractController : MonoBehaviour
                 }
         }
     }
+    //private void Check()
+    //{
+    //    Vector2 position = rgbd2d.position + character.movement * offsetDistance;
+    //    Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
+      
+    //    foreach (Collider2D c in colliders)
+    //    {
+    
+    //            Interactable hit = c.GetComponent<Interactable>();
+    //            if (hit != null)
+    //            {
+    //                notification.NotificationFunction(hit.gameObject);
+    //                return;
+    //            }
+            
+    //    }
+    //   notification.NotificationFunctionof();
+    //}
+
  }

@@ -100,13 +100,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e05d68f7442700d4ca63938f711b90b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpDrop: {fileID: 2232039824956140797}
-  dropCount: 1
+  pickUpDrop: {fileID: 3928022895327828492, guid: 6de4c48d0cf719348ae58150009b5d80, type: 3}
+  dropCount: 3
   spread: 0.5
-  item: {fileID: 11400000, guid: 302f7711a1513394185678a0a4b027a4, type: 2}
+  item: {fileID: 11400000, guid: c32dab4ceee10494b8a9f24388b70131, type: 2}
   itemCountInOneDrop: 1
   nodeType: 2
-  damageTree: 1
   enemy: {fileID: 0}
 --- !u!61 &8123840986108392222
 BoxCollider2D:
@@ -121,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.20772207, y: 0.25269687}
+  m_Offset: {x: 0.22211945, y: 0.27699256}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: -0.0032254732, y: 0.0027236938}
@@ -132,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4066794, y: 0.48965144}
+  m_Size: {x: 0.37788463, y: 0.30068493}
   m_EdgeRadius: 0
 --- !u!114 &2821729832222338965
 MonoBehaviour:
