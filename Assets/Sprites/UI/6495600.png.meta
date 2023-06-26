@@ -146,90 +146,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: panel
-      rect:
-        serializedVersion: 2
-        x: 236
-        y: 1726
-        width: 1604
-        height: 727
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ec4b761d89d5a145b509bd79d6da74f
-      internalID: 1046740144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 6495600_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 883
-        width: 750
-        height: 755
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5729c1c3ce6f62640a615c6f8687295f
-      internalID: -1512608019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 6495600_3
-      rect:
-        serializedVersion: 2
-        x: 897
-        y: 588
-        width: 520
-        height: 471
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c5cdcec95835df40ae8d80f524235af
-      internalID: -1487085698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slot
-      rect:
-        serializedVersion: 2
-        x: 1436
-        y: 1156
-        width: 390
-        height: 397
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ca25381170591f43926d7f16c3fa7b6
-      internalID: 1725248251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -243,10 +159,6 @@ TextureImporter:
     nameFileIdTable:
       6495600_0: 573163426
       6495600_1: 987482865
-      6495600_2: -1512608019
-      6495600_3: -1487085698
-      panel: 1046740144
-      Slot: 1725248251
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
