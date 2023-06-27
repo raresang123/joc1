@@ -60,10 +60,13 @@ public class GameSceneManager : MonoBehaviour
     }
     public void SwitchScene(string to,Vector3 targetPosition)
     {
-        load = SceneManager.LoadSceneAsync(to, LoadSceneMode.Additive);
+        screenTint.Tint();
+        new WaitForSeconds(1f / screenTint.speed + 0.1f);
         unload = SceneManager.UnloadSceneAsync(currentScene);
+        load = SceneManager.LoadSceneAsync(to, LoadSceneMode.Additive);
         currentScene = to;
         MoveCharacter(targetPosition);
+        screenTint.UnTint();
     } 
 
     private void MoveCharacter(Vector3 targetPosition)

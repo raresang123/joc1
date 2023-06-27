@@ -11,7 +11,7 @@ public class PropPlacementManager : MonoBehaviour
     CaveData caveData;
 
     [SerializeField]
-    private List<Prop> propsToPlace;
+    private List<Prop> propsToPlace=new List<Prop>();
 
     [SerializeField, Range(0, 1)]
     private float cornerPropPlacementChance = 0.7f;

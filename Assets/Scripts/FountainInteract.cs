@@ -22,6 +22,7 @@ public class FountainInteract : Interactable, IPersistant
     [SerializeField] Tile oldFloorTile;
     [SerializeField] Tile oldPiceFloorTile;
     [SerializeField] Tile newPiceFloorTile;
+    DayTimeController finalTime;
 
 
     private void Paint()
@@ -52,14 +53,17 @@ public class FountainInteract : Interactable, IPersistant
         {
             Init();
         }
-
-
-
+        finalTime=GameManager.FindObjectOfType<DayTimeController>();
     }
 
     private void Update()
     {
         CheckAllSlotsOccupiedAndSetActive();
+        if(CheckAllSlots()==true)
+        {
+            
+            finalTime.ShowFinalTime();
+        }
     }
 
     private void Init()
@@ -193,6 +197,23 @@ public class FountainInteract : Interactable, IPersistant
             }
             
         }
+    }
+    public bool CheckAllSlots()
+    {
+        for (int i = 0; i < itemContainer.slots.Count; i++)
+        {
+            if (itemContainer.slots[i].item==null)
+            {
+                
+                    return false;
+                
+            }
+            if (itemContainer.slots[i].item.Name.Contains("Crystal")==null && itemContainer.slots[i].item.Name.Contains("Lemn")==null && itemContainer.slots[i].item.Name.Contains("Piatra")==null)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
 }

@@ -15,12 +15,19 @@ public class DayTimeController : MonoBehaviour
     [SerializeField] float morningTime = 28800f;
     float time;
 
+    float totalTime;
+
     [SerializeField] float startAtTime = 28800f;
     [SerializeField] Text text;
+    [SerializeField] Text finalText;
+    [SerializeField] GameObject finalTextShow;
     [SerializeField] float timeScale = 60f;
     [SerializeField] Light2D globalLight;
     private int days;
     List<TimeAgent> agents;
+
+
+
 
     private void Awake()
     {
@@ -31,6 +38,7 @@ public class DayTimeController : MonoBehaviour
     private void Start()
     {
         time = startAtTime;
+        totalTime = 0;
     }
 
 
@@ -54,17 +62,33 @@ public class DayTimeController : MonoBehaviour
         get { return time % 3600f / 60f; }
     }
 
+    float FinalHours
+    {
+        get { return totalTime / 3600f; }
+    }
+
+    float FinalMinutes
+    {
+        get { return totalTime % 3600f / 60f; }
+    }
+
 
 
     private void Update()
     {
+        if(finalTextShow.active == false)
+        {
+            totalTime += Time.deltaTime * timeScale;
+        }
         time += Time.deltaTime * timeScale;
         TimeValueCalculation();
         DayLight();
         TimeAgents();
+        FinalTime();
 
         if (time > secondsInDay)
         {
+            
             NextDay();
         }
 
@@ -124,6 +148,20 @@ public class DayTimeController : MonoBehaviour
             secondsToSkip += morningTime - time;
         }
         SkipTime(secondsToSkip);
+    }
+
+    public void FinalTime()
+    {
+        int hh = (int)FinalHours;
+        int mm = (int)FinalMinutes;
+        //finalText.text = hh.ToString("00") + ":" + mm.ToString("00");
+    }
+    public void ShowFinalTime()
+    {
+        finalTextShow.SetActive(true);
+        int hh = (int)FinalHours;
+        int mm = (int)FinalMinutes;
+        finalText.text = "You finished in:  " + hh.ToString("00")  + "h " + mm.ToString("00")+"m";
     }
 
 }

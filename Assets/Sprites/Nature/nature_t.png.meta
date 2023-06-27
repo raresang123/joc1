@@ -1133,12 +1133,12 @@ TextureImporter:
       name: newCityFloor
       rect:
         serializedVersion: 2
-        x: 1199
+        x: 1200
         y: 1554
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1146,6 +1146,27 @@ TextureImporter:
       bones: []
       spriteID: e0fcc127f4ee9ed48b8d856e28467209
       internalID: 1566150651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flowers
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 1700
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331f319ed1772a247b9e7515cacd2469
+      internalID: 555225501
       vertices: []
       indices: 
       edges: []
@@ -1163,18 +1184,17 @@ TextureImporter:
     nameFileIdTable:
       cWall: -5819865243225261627
       Marker: -6890893029139489844
-      Grass2: -6682195311321957372
+      newCityFloor: 1566150651
       Grass_City2: -7761970954124832655
+      Grass2: -6682195311321957372
       kk: -5157984676150313506
       gardVertical: 314730281348358848
       nature_t_8: 8568301488136472608
       nature_t_3: 8044969124562771762
-      newCityFloor: 1566150651
       GardAlb1: 1935030111026176125
       IarbaBuna: 6201760427067709585
       Buruiana: -6241092510317353877
-      butoi: 3616841122339178795
-      : 2877471580529523173
+      butoi: -6241092510317353877
       Log: -6222168496717222301
       cave_trunk: 6521939519163181119
       gardOrizontal: 282723165844067796
@@ -1198,6 +1218,7 @@ TextureImporter:
       stone-wall: -643978955197758215
       Piatra1: -8236798271858214481
       copacRoz: -47963485709598973
+      Flowers: 555225501
       nature_t_6: 372923194230877084
       nature_t_0: -3939647772943228602
       pamant: 6055027256258353641

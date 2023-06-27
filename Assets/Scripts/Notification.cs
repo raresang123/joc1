@@ -39,18 +39,6 @@ public class Notification : MonoBehaviour
             {
                 notification.SetActive(true);
             }
-
-            if (CompareTag("crystal"))
-            {
-                
-                {
-                    notification.SetActive(true);
-                }
-            }
-            else
-            {
-                notification.SetActive(true);
-            }
         }
     }
       

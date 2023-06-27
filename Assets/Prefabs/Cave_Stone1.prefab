@@ -75,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 187435901
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1232798668, guid: 687cd345573be4d4db8f0e9ab5b5f091, type: 3}
+  m_Sprite: {fileID: 8168584425742571292, guid: 687cd345573be4d4db8f0e9ab5b5f091, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.9375, y: 0.78125}
+  m_Size: {x: 0.84375, y: 0.84375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -104,6 +104,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: c32dab4ceee10494b8a9f24388b70131, type: 2}
   itemCountInOneDrop: 1
   nodeType: 2
+  damageTree: 2
   enemy: {fileID: 0}
 --- !u!61 &16826818312736522
 BoxCollider2D:
@@ -123,7 +124,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: -0.00019440828, y: -0.00019440828}
     oldSize: {x: 0.84375, y: 0.84375}
-    newSize: {x: 0.9375, y: 0.78125}
+    newSize: {x: 0.84375, y: 0.84375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
