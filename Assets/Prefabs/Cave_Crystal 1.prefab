@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2232039824956140739}
   - component: {fileID: 2232039824956140796}
   - component: {fileID: 8123840986108392222}
-  - component: {fileID: 2821729832222338965}
   m_Layer: 0
   m_Name: Cave_Crystal 1
   m_TagString: crystal
@@ -134,20 +133,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4066794, y: 0.48965144}
   m_EdgeRadius: 0
---- !u!114 &2821729832222338965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2232039824956140797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 869b6e9789d392e40b71a1a718de804e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  notification: {fileID: 9185740736331269578}
-  character: {fileID: 0}
 --- !u!1 &9185740736331269578
 GameObject:
   m_ObjectHideFlags: 0

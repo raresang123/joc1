@@ -55,7 +55,7 @@ public class GameSceneManager : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
 
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentScene));
+        try { SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentScene)); }catch(Exception X) { }
         screenTint.UnTint();
     }
     public void SwitchScene(string to,Vector3 targetPosition)

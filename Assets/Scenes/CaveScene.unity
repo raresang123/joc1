@@ -20462,7 +20462,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 584f8ca33e34c3341af7fd95b36659a8, type: 2}
   cornerPropPlacementChance: 0.712
   enemyPrefab: {fileID: 866930423479775793, guid: 4cd25cbe2ad819f48a6690e0af4855e2, type: 3}
-  roomEnemiesCount: 7
+  roomEnemiesCount: 4
 --- !u!4 &1326059300
 Transform:
   m_ObjectHideFlags: 0

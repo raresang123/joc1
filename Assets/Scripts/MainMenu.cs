@@ -10,9 +10,11 @@ public class MainMenu : MonoBehaviour
    public void PlayGame()
     {
         playbutton.Play();
-        var parameters = new LoadSceneParameters(LoadSceneMode.Additive);
-        SceneManager.LoadScene("Home");
-        SceneManager.LoadScene("Essentials",parameters);
+       // var parameters = new LoadSceneParameters(LoadSceneMode.Additive);
+        SceneManager.LoadScene("Essentials");
+        SceneManager.LoadSceneAsync("Home", LoadSceneMode.Additive);
+       
+        //SceneManager.LoadScene("Essentials");
     }
     public void QuitGame()
     {

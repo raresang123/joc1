@@ -24,7 +24,6 @@ public class ItemSlot
       this.count = count;
     }
     public void Clear()
-
     {
       item = null;
       count = 0;
