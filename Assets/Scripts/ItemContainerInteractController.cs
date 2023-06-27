@@ -9,6 +9,7 @@ public class ItemContainerInteractController : MonoBehaviour
     [SerializeField] ItemContainerPanel itemContainerPanel;
     Transform openedChest;
     [SerializeField] float maxDistance = 0.8f;
+    [SerializeField] GameObject panelhands;
 
 
     private void Awake()
@@ -25,6 +26,8 @@ public class ItemContainerInteractController : MonoBehaviour
 
             {
                openedChest.GetComponent<LootContainerInteract>().Close(GetComponent<PlayerController>());
+
+                
             }
 
         }
@@ -35,13 +38,25 @@ public class ItemContainerInteractController : MonoBehaviour
         targetItemContainer = itemContainer;
         itemContainerPanel.inventory = targetItemContainer;
         inventoryController.Open();
+        CloseHS();
         itemContainerPanel.gameObject.SetActive(true);
         openedChest = _openedChest;
     }
     public void Close()
     {
         inventoryController.Close();
+        OpenHS();
         itemContainerPanel.gameObject.SetActive(false);
         openedChest = null;
+    }
+    public void CloseHS()
+    {
+        panelhands.SetActive(false);
+
+    }
+    public void OpenHS()
+    {
+        panelhands.SetActive(true);
+
     }
 }

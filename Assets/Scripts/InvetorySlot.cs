@@ -18,6 +18,7 @@ public void SetIndex(int index)
     myIndex = index;
 
 }
+
 public void Set(ItemSlot slot)
 {
     icon.gameObject.SetActive(true);

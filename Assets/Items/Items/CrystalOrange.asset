@@ -15,6 +15,7 @@ MonoBehaviour:
   Name: CrystalOrange
   stackable: 1
   icon: {fileID: -1973788438, guid: f2cb709aaceaede429dd86e73a166198, type: 3}
+  tile: {fileID: 0}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}
@@ -23,4 +24,4 @@ MonoBehaviour:
   crop: {fileID: 0}
   itemPrefab: {fileID: 0}
   iconHighlight: 0
-  id: 15
+  id: 12

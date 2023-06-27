@@ -15,6 +15,7 @@ MonoBehaviour:
   Name: Corn_Seed
   stackable: 1
   icon: {fileID: 155703114, guid: 121bbcb029cfa4146944eb4ec7e7c1ed, type: 3}
+  tile: {fileID: 0}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 11400000, guid: 1b9529ec9258ab14796597c507ca2d50, type: 2}
   onItemUsed: {fileID: 11400000, guid: 1b9529ec9258ab14796597c507ca2d50, type: 2}
@@ -23,4 +24,4 @@ MonoBehaviour:
   crop: {fileID: 11400000, guid: 9fdbedfc1f3939c41a02655f1b73dc87, type: 2}
   itemPrefab: {fileID: 0}
   iconHighlight: 0
-  id: 4
+  id: 13

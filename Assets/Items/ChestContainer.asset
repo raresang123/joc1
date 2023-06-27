@@ -13,20 +13,20 @@ MonoBehaviour:
   m_Name: ChestContainer
   m_EditorClassIdentifier: 
   slots:
-  - item: {fileID: 0}
+  - item: {fileID: 11400000, guid: 8a5805b632c1b4e428dfd4b5d0647f50, type: 2}
     count: 0
-  - item: {fileID: 0}
+  - item: {fileID: 11400000, guid: 1fdde34599d79214bad445254f569716, type: 2}
     count: 0
-  - item: {fileID: 0}
+  - item: {fileID: 11400000, guid: 7c2632c2b40e5eb4ab328c78a4461f3b, type: 2}
     count: 0
-  - item: {fileID: 0}
+  - item: {fileID: 11400000, guid: 3f770764c3c93454b80e52c6f0f99a4d, type: 2}
     count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
+  - item: {fileID: 11400000, guid: 8ff8d6f472e917f47a8582008ad9c527, type: 2}
+    count: 10
+  - item: {fileID: 11400000, guid: a3dfbeb1657cafc49b64070d7d734116, type: 2}
+    count: 10
+  - item: {fileID: 11400000, guid: 960a3e2477e72df4b81d73573812c0d1, type: 2}
+    count: 10
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}

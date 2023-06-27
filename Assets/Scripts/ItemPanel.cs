@@ -23,8 +23,11 @@ public class ItemPanel : MonoBehaviour
     {
         Show(); 
     }
-        
 
+    void Update()
+    {
+        Show();
+    }
     private void LateUpdate()
     {
         if (inventory.isUpdated)
