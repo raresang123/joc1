@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Lemn
   stackable: 1
-  icon: {fileID: -1587948741, guid: 687cd345573be4d4db8f0e9ab5b5f091, type: 3}
+  icon: {fileID: -6222168496717222301, guid: 687cd345573be4d4db8f0e9ab5b5f091, type: 3}
+  tile: {fileID: 0}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}
+  onStatsUsed: {fileID: 0}
+  onCombat: {fileID: 0}
   crop: {fileID: 0}
   itemPrefab: {fileID: 0}
   iconHighlight: 0

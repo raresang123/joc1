@@ -15,9 +15,11 @@ MonoBehaviour:
   Name: 
   stackable: 0
   icon: {fileID: -1759763848, guid: 790a164b7691fd44abad27c0d05636ac, type: 3}
+  tile: {fileID: 11400000, guid: 305a267f810256840821a708ce46cc92, type: 2}
   onAction: {fileID: 11400000, guid: 38a160b895c835742900b857e3fbad1c, type: 2}
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}
+  onStatsUsed: {fileID: 0}
   onCombat: {fileID: 0}
   crop: {fileID: 0}
   itemPrefab: {fileID: 0}

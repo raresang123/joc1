@@ -1117,7 +1117,7 @@ TextureImporter:
         width: 0
         height: 0
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1129,10 +1129,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: newCityFloor
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 1554
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fcc127f4ee9ed48b8d856e28467209
+      internalID: 1566150651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4c02a1fde2f25884681a435334f6ea0b
     internalID: 0
     vertices: []
     indices: 
@@ -1148,6 +1169,7 @@ TextureImporter:
       gardVertical: 314730281348358848
       nature_t_8: 8568301488136472608
       nature_t_3: 8044969124562771762
+      newCityFloor: 1566150651
       GardAlb1: 1935030111026176125
       IarbaBuna: 6201760427067709585
       Buruiana: -6241092510317353877

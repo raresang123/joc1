@@ -9,6 +9,7 @@ public class ToolbarController : MonoBehaviour
 {
     [SerializeField] int toolbarSize = 9 ;
      int selectedTool;
+    MarkerManager marker;
         
      
      public Action<int> onChange;
@@ -23,6 +24,7 @@ public class ToolbarController : MonoBehaviour
 
     private void Start()
     {
+        marker = GameManager.FindObjectOfType<MarkerManager>();
         onChange += UpdateHighlight;
         UpdateHighlight(selectedTool);
     }
@@ -63,5 +65,11 @@ public class ToolbarController : MonoBehaviour
         {
             iconHighlight.Set(item.icon);
         }
+
+        try
+        {
+            marker.ChangeMarker(item.tile);
+        }catch(Exception x) { }
+        
     }
 }

@@ -15,9 +15,12 @@ MonoBehaviour:
   Name: Sapa
   stackable: 0
   icon: {fileID: -296662650, guid: 87987314ce75240429f37102e73c3a40, type: 3}
+  tile: {fileID: 11400000, guid: 305a267f810256840821a708ce46cc92, type: 2}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 11400000, guid: 7a6691d747824ac4d8e92426e5637759, type: 2}
   onItemUsed: {fileID: 0}
+  onStatsUsed: {fileID: 0}
+  onCombat: {fileID: 0}
   crop: {fileID: 0}
   itemPrefab: {fileID: 0}
   iconHighlight: 0
