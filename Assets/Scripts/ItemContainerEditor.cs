@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 
-[CustomEditor(typeof(ItemContainer))]
-public class ItemContainerEditor : Editor
+//using UnityEditor;
+
+
+//[CustomEditor(typeof(ItemContainer))]
+public class ItemContainerEditor : MonoBehaviour
 {
+    /*
    public override void OnInspectorGUI()
 {
    ItemContainer container = target as ItemContainer;
@@ -21,5 +22,5 @@ public class ItemContainerEditor : Editor
    }
    DrawDefaultInspector();
 
-  }
+  }*/
 }

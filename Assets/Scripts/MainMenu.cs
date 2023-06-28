@@ -11,8 +11,8 @@ public class MainMenu : MonoBehaviour
     {
         playbutton.Play();
        // var parameters = new LoadSceneParameters(LoadSceneMode.Additive);
-        SceneManager.LoadScene("Essentials");
-        SceneManager.LoadSceneAsync("Home", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Home");
+        SceneManager.LoadSceneAsync("Essentials", LoadSceneMode.Additive);
        
         //SceneManager.LoadScene("Essentials");
     }

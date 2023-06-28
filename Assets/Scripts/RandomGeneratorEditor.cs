@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
+
+//using UnityEditor;
+
 using UnityEngine;
 
-[CustomEditor(typeof(AbstractDungeonGenerator),true)]
-public class RandomGeneratorEditor : Editor
+//[CustomEditor(typeof(AbstractDungeonGenerator),true)]
+public class RandomGeneratorEditor : MonoBehaviour
 {
-    AbstractDungeonGenerator generator;
+/*    AbstractDungeonGenerator generator;
 
     private void Awake()
     {
@@ -22,5 +22,5 @@ public class RandomGeneratorEditor : Editor
         {
             generator.GenerateDungeon();
         }
-    }
+    }*/
 }

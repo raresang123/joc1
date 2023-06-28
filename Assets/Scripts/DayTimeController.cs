@@ -39,6 +39,7 @@ public class DayTimeController : MonoBehaviour
     {
         time = startAtTime;
         totalTime = 0;
+        
     }
 
 
